@@ -14,6 +14,9 @@ class ChargingSession:
         self.cost_usd = round(self.energy_kwh * 0.25, 2)
         self.end_time = self.start_time + timedelta(minutes=self.duration_min)
 
+        if not station_id or not isinstance(station_id, str):
+            raise ValueError("Invalid station ID. Must be a non-empty string.")
+
     def to_dict(self):
         return {
             "session_id": self.session_id,
@@ -26,13 +29,16 @@ class ChargingSession:
         }
     
 def log_session(session: ChargingSession, file_path="data/charging_log.csv"):
-        os.makedirs("data", exist_ok=True)
-        file_exist = os.path.isfile(file_path)
+    os.makedirs("data", exist_ok=True)
+    file_exists = os.path.isfile(file_path)
+    try: 
         with open(file_path, mode="a", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=session.to_dict().keys())
-            if not file_exist:
+            if not file_exists:
                 writer.writeheader()
             writer.writerow(session.to_dict())
+    except Exception as e:
+        print(f"Failed to log session: {e}")
 
 
 # Test run
@@ -44,5 +50,5 @@ def simulate_multiple_sessions(station_id, num_sessions=5):
 
 if __name__ == "__main__":
     print("Simulating 5 sessions at SF-001...")
-    simulate_multiple_sessions("SF-001", num_sessions=5)
+    simulate_multiple_sessions("SF-001", num_sessions=5) #Invalid station ID
     print("All sessions logged to data/charging_log.csv")
