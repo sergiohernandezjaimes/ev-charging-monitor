@@ -50,5 +50,5 @@ def simulate_multiple_sessions(station_id, num_sessions=5):
 
 if __name__ == "__main__":
     print("Simulating 5 sessions at SF-001...")
-    simulate_multiple_sessions("SF-001", num_sessions=5) #Invalid station ID
+    simulate_multiple_sessions("SF-001", num_sessions=5)
     print("All sessions logged to data/charging_log.csv")
