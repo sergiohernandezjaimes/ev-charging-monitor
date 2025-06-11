@@ -1,8 +1,23 @@
+# charging_simulator.py
+# Simulator to generate dummy stats for EV stations
+
+import json
+import os
 import csv
 import os
-from datetime import datetime, timedelta
 import random
+from datetime import datetime, timedelta
 
+def load_stations():
+    filepath = os.path.join("stations.json")
+    try:
+        with open(filepath, "r") as f:
+            stations = json.load(f)
+            return [s["id"] for s in stations]
+    except Exception as e:
+        print(f"Failed to load stations: {e}")
+        return []
+    
 class ChargingSession:
     def __init__(self, station_id, power_kw=7.2):
         self.session_id = f"S{random.randint(1000, 9999)}"
@@ -40,15 +55,20 @@ def log_session(session: ChargingSession, file_path="data/charging_log.csv"):
     except Exception as e:
         print(f"Failed to log session: {e}")
 
-
 # Test run
-def simulate_multiple_sessions(station_id, num_sessions=5):
+def simulate_multiple_sessions(num_sessions=5):
+     stations = load_stations()
+     if not stations:
+          print("No stations available to simulate sessions.")
+          return
+     
      for _ in range(num_sessions):
-          session = ChargingSession(station_id=station_id)
+          random_station = random.choice(stations)
+          session = ChargingSession(station_id=random_station)
           print("Session:", session.to_dict())
           log_session(session)
 
 if __name__ == "__main__":
-    print("Simulating 5 sessions at SF-001...")
-    simulate_multiple_sessions("SF-001", num_sessions=5)
-    print("All sessions logged to data/charging_log.csv")
+    print("Simulating random charging session for SF stations...")
+    simulate_multiple_sessions(num_sessions=10)
+    print("All sessions logged to date/chargin_log.csv")
