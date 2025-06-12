@@ -61,10 +61,15 @@ if not data.empty:
         max_value=max_date
     )
 
-    # Guard against invalid input (sometimes user selects only 1 date)
+    # Handle single-date or invalid selections
     if isinstance(date_range, tuple) and len(date_range) == 2:
         start_date, end_date = date_range
-        data = data[(data["start_time"].dt.date >= start_date) & (data["start_time"].dt.date <= end_date)]
+        if start_date > end_date:
+            st.warning("Start date is after end date. Please adjust.")
+        else:
+            data = data[(data["start_time"].dt.date >= start_date) & (data["start_time"].dt.date <= end_date)]
+    else:
+        st.info("Please select both a start date and end date.")
 
 st.sidebar.markdown("---")
 
@@ -76,6 +81,17 @@ if selected_station != "ALL":
 if not data.empty:
     st.subheader("Charging Session Log")
     st.dataframe(data)
+
+# ----------------------------
+# Download filtered data
+# ----------------------------
+    csv = data.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        label="Download CSV",
+        data=csv,
+        file_name="charging_sessions_filtered.csv",
+        mime="text/csv"
+)
 
 # ----------------------------
 # Summary stats
