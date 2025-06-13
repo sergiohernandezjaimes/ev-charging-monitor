@@ -28,6 +28,12 @@ def load_data(csv_path="data/charging_log.csv"):
     
 data = load_data()
 
+if not data.empty:
+    min_date = data["start_time"].min().date()
+    max_date = data["start_time"].max().date()
+else:
+    min_date = max_date = None
+
 # ----------------------------
 # Filter Sidebar
 # ----------------------------
@@ -38,46 +44,44 @@ with st.sidebar:
     if "selected_station" not in st.session_state:
         st.session_state.selected_station = "ALL"
 
-    if st.button("Reset Filter"):
-        st.session_state.selected_station = "ALL"
+    if min_date and max_date:
+        if "date_range" not in st.session_state:
+            st.session_state.date_range = (min_date, max_date)
 
-    selected_station = st.selectbox(
-        "Select Station",
-        station_ids,
-        index=station_ids.index(st.session_state.selected_station),
-        key="selected_station"
-    )
+        if st.sidebar.button("Reset Filter"):
+            st.session_state.selected_station = "ALL"
+            st.session_state.date_range = (min_date, max_date)        
+
+        date_range = st.sidebar.date_input(
+            "Filter by Date Range",
+            min_value=min_date, 
+            max_value=max_date,
+            key="date_range"
+        )
+
 # ----------------------------
 # Date Filter
 # ----------------------------
-if not data.empty:
-    min_date = data["start_time"].min().date()
-    max_date = data["start_time"].max().date()
-
-    date_range = st.sidebar.date_input(
-        "Filter by Date Range",
-        value=(min_date, max_date),
-        min_value=min_date,
-        max_value=max_date
-    )
-
-    # Handle single-date or invalid selections
-    if isinstance(date_range, tuple) and len(date_range) == 2:
-        start_date, end_date = date_range
-        if start_date > end_date:
-            st.warning("Start date is after end date. Please adjust.")
-        else:
-            data = data[(data["start_time"].dt.date >= start_date) & (data["start_time"].dt.date <= end_date)]
+# Handle single-date or invalid selections
+if isinstance(st.session_state.date_range, tuple) and len(st.session_state.date_range) == 2:
+    start_date, end_date = st.session_state.date_range
+    if start_date > end_date:
+        st.warning("Start date is after end date. Please adjust.")
     else:
-        st.info("Please select both a start date and end date.")
+        data = data[
+            (data["start_time"].dt.date >= start_date)
+            & (data["start_time"].dt.date <= end_date)
+        ]
+else:
+    st.info("Please select both a start date and end date.")
 
 st.sidebar.markdown("---")
 
 # ----------------------------
 # Data Table
 # ----------------------------
-if selected_station != "ALL":
-    data = data[data["station_id"] == selected_station]
+if st.session_state.selected_station != "ALL":
+    data = data[data["station_id"] == st.session_state.selected_station]
 if not data.empty:
     st.subheader("Charging Session Log")
     st.dataframe(data)
