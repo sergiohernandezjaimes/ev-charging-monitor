@@ -1,54 +1,71 @@
-# ⚡ EV Charging Session Monitor
+# ⚡ EV Charging Monitor Dashboard
 
-This project simulates EV charging station activity across San Francisco using real-time generated data, GPS mapping, and interactive dashboard. The tool provides insights into session logs, energy usage, and cost - with filter options by station ID and date range, plus CSV export functionality.
+A real-time dashboard that simulates EV charging sessions across San Francisco. Built in Python and Streamlit, it tracks energy usage, charging duration, and cost per session - with dynamic GPS filtering, station-level analytics, and downloadable CSV logs.
 
-It's designed as a diagnostic and analytics dashboard for electric vehicle infrastructure monitoring, and showcases full-stack development using Python and Streamlit.
-
----
-## ✨ Features
-
-
-- 📍 GPS-based station map (San Francisco view)
-- 📊 Charging session log table with station ID, energy, duration, and cost
-- 📆 Date and station filters with reset support
-- 📈 Energy, duration, and cost charts
-- 📥 Export filtered sessions as CSV
-- 🧠 Random session generation via simulation script
+> 🧪 Insipired by real-world QA & validation use cases in the EV ecosystem.
 
 ---
+## 🚗 Features
 
-## 🛠️ Tech Stack
 
-- **Python 3.10+**
-- [Streamlit](https://streamlit.io/) – web app framework
-- [Folium](https://python-visualization.github.io/folium/) – map rendering
-- [Pandas](https://pandas.pydata.org/) – data manipulation
-- [geopy](https://github.com/geopy/geopy) – distance calculation
-- [streamlit-folium](https://github.com/randyzwitch/streamlit-folium) – map embed wrapper
+- ✅ Simulates live EV charging sessions across 3 SF stations
+- 🗺️ Interactive map using Folium
+- 📍 GPS-based distance from user to station
+- 🧮 Session-level analytics: energy (kWh), duration, cost
+- 📆 Date range filtering + station filter
+- 📥 CSV export for QA & analysis
+- 🧠 Modular Python backend with object-oriented structure
+- 🌱 Designed for future expansion (e.g. route planner, pricing logic, alerts)
 
 ---
 
-## 🚀 Live Demo
+## 📸 Demo
 
-Check out the deployed dashboard:  
-👉 [ev-charging-monitor.streamlit.app](https://ev-charging-monitor.streamlit.app/)
+![EV Dashboard Preview](assets/demo.gif)
+*(Streamlit dashboard with map + live session stats)*
 
 ---
 
-## 🛠️ Run Locally
+## 📦 Tech Stack
 
-Clone the repo:
+- `Python`
+- `Streamlit`
+- `Pandas`
+- `Folium`
+- `Geopy`
+- `VS Code` + `Git`
 
-```bash
-git clone https://github.com/sergiohernandezjaimes/ev-charging-monitor.git
-cd ev-charging-monitor
-pip install -r requirements.txt
-streamlit run dashboard.py
-```
 ---
 
-## ✍️ Author
+## 🛣️ Feature Roadmap
 
-**Sergio Hernandez**  
-GitHub: [@sergiohernandezjaimes](https://github.com/sergiohernandezjaimes.com/)
-LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/sergio-hernandez-1948b0159.com/)
+| Feature                        | Status   |
+|-------------------------------|----------|
+| Charging session simulation   | ✅ Done   |
+| Station filtering + map view | ✅ Done   |
+| Distance calculator           | ✅ Done   |
+| Date range + CSV export       | ✅ Done   |
+| 🔜 Route planner UI           | Coming soon |
+| 🔜 Dynamic pricing (time of day) | Coming soon |
+| 🔜 Mobile-friendly layout     | In progress |
+| 🔜 Admin upload access        | Planned  |
+
+---
+
+## 🌁 About Me
+
+Hi, I’m Sergio — a QA and systems engineer passionate about building meaningful tools in clean tech.  
+I created this dashboard as a way to deepen my skills in Python and data visualization while solving real problems.  
+My dream is to one day work on a product like this in San Francisco.  
+**Unfinished business — building toward it every day.**
+
+🔗 [My Portfolio](https://sergiohernandezjaimes.github.io)  
+🐙 [My GitHub](https://github.com/sergiohernandezjaimes)
+
+---
+
+## Contribute or Fork
+
+Want to build your own city-based version?
+Fork this repo and modify `stations.json` to your region.
+Pull requests welcome!
