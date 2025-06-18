@@ -120,3 +120,19 @@ if not data.empty:
     
 else:
     st.info("No data to display.")
+
+# ----------------------------
+# Coming Soon: Route Planner
+# ----------------------------
+st.markdown("---")
+st.subheader("Coming Soon: Route Planner")
+st.markdown(
+    """"
+    Imagine entering your destination and getting:
+    - Nearby charging stations along your route
+    - Estimated cost and time to charge
+    - Smart recommendations based on battery % and station availability
+
+    Actively building this next - stay tuned!
+    """
+)
