@@ -45,9 +45,9 @@ A real-time dashboard that simulates EV charging sessions across San Francisco. 
 | Station filtering + map view | ✅ Done   |
 | Distance calculator           | ✅ Done   |
 | Date range + CSV export       | ✅ Done   |
-| 🔜 Route planner UI           | Coming soon |
-| 🔜 Dynamic pricing (time of day) | Coming soon |
-| 🔜 Mobile-friendly layout     | In progress |
+| 🔜 Route planner UI           | In progress |
+| 🔜 Dynamic pricing (time of day) | Planned |
+| 🔜 Mobile-friendly layout     | Planned |
 | 🔜 Admin upload access        | Planned  |
 
 ---
