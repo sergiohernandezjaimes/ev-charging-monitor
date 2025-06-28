@@ -2,7 +2,7 @@
 
 A real-time dashboard that simulates EV charging sessions across San Francisco. Built in Python and Streamlit, it tracks energy usage, charging duration, and cost per session - with dynamic GPS filtering, station-level analytics, and downloadable CSV logs.
 
-> 🧪 Insipired by real-world QA & validation use cases in the EV ecosystem.
+> 🧪 Inspired by real-world QA & validation use cases in the EV ecosystem.
 
 ---
 ## 🚗 Features
