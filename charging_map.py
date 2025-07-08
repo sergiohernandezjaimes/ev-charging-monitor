@@ -8,35 +8,39 @@ import folium
 from streamlit_folium import folium_static
 
 # Loads stations from JSON file
-def load_station_data():
-    filepath = os.path.join("stations.json")
-    try:
-        with open(filepath,"r") as f:
-            stations = json.load(f)
-            return stations
-    except Exception as e:
-        print(f"Failed to load statin data: {e}")
-        return []
+def load_real_stations(json_path="data/ev_api_results.json"):
+    if os.path.exists(json_path):
+        with open(json_path, "r") as f:
+            data = json.load(f)
 
+        stations = []
+        for item in data:
+            if item.get("AddressInfo") and item["AddressInfo"].get("Latitude") and item["AddressInfo"].get("Longitude"):
+                stations.append({
+                    "id": item.get("ID"),
+                    "name": item["AddressInfo"].get("Title", "Unnamed Station"),
+                    "lat": item["AddressInfo"]["Latitude"],
+                    "lon": item["AddressInfo"]["Longitude"],
+                    "address": item["AddressInfo"].get("AddressLine1", "No Address")
+                })
+        return stations
+    else:
+        return []
 # Simulated user location (e.g. user's home)
 user_location = (37.7680, -122.4313) # Near Mission Dolores Park
 
 def render_station_map():
-    stations = load_station_data()
+    stations = load_real_stations() # Now using real stations!
     # Base map centered on SF
     sf_center = [37.7749, -122.4194]
     m = folium.Map(location=sf_center, zoom_start=13)
 
-    # Markers for each station & calculates distance from user
     for station in stations:
-        station_coords = (station["lat"], station["lon"])
-        distance_km = geodesic(user_location, station_coords).km
-        distance_text = f"{distance_km:.2f} km away"
-
+        popup_text = f"{station['name']}<br>{station['address']}"
         folium.Marker(
-            location=station_coords,
-            popup=f"{station['name']} ({station['id']})<br>{distance_text}",
-            tooltip=f"{station['name']} - {distance_text}",
+            location=[station["lat"], station["lon"]],
+            popup=popup_text,
+            tooltip=station["name"],
             icon=folium.Icon(color="green", icon="bolt", prefix="fa")
         ).add_to(m)
           

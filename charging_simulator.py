@@ -7,16 +7,7 @@ import csv
 import os
 import random
 from datetime import datetime, timedelta
-
-def load_stations():
-    filepath = os.path.join("stations.json")
-    try:
-        with open(filepath, "r") as f:
-            stations = json.load(f)
-            return [s["id"] for s in stations]
-    except Exception as e:
-        print(f"Failed to load stations: {e}")
-        return []
+from charging_map import load_real_stations
     
 class ChargingSession:
     def __init__(self, station_id, power_kw=7.2):
@@ -57,18 +48,18 @@ def log_session(session: ChargingSession, file_path="data/charging_log.csv"):
 
 # Test run
 def simulate_multiple_sessions(num_sessions=5):
-     stations = load_stations()
+     stations = load_real_stations()
      if not stations:
           print("No stations available to simulate sessions.")
           return
      
      for _ in range(num_sessions):
           random_station = random.choice(stations)
-          session = ChargingSession(station_id=random_station)
+          session = ChargingSession(station_id=str(random_station["id"]))
           print("Session:", session.to_dict())
           log_session(session)
 
 if __name__ == "__main__":
     print("Simulating random charging session for SF stations...")
-    simulate_multiple_sessions(num_sessions=10)
+    simulate_multiple_sessions(num_sessions=5)
     print("All sessions logged to date/chargin_log.csv")
