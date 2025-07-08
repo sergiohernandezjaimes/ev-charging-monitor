@@ -38,6 +38,144 @@
       "Title": "Public"
     },
     "StatusType": {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 150,
+      "Title": "Planned For Future Date"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-07T01:44:00Z",
+    "ID": 459320,
+    "UUID": "D4A7F94D-A261-4EB5-9AE2-7D1EADB04FF8",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 15,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459709,
+      "Title": "Pilot Travel Center #408 Grantsville, MD",
+      "AddressLine1": "3000 Chestnut Ridge Road",
+      "AddressLine2": null,
+      "Town": "Grantsville",
+      "StateOrProvince": "MD",
+      "Postcode": "21536 ",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 39.692318816561624,
+      "Longitude": -79.09998040831158,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": null,
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772385,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 150,
+        "StatusType": {
+          "IsOperational": false,
+          "IsUserSelectable": true,
+          "ID": 150,
+          "Title": "Planned For Future Date"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 350,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 150,
+    "DateLastStatusUpdate": "2025-07-07T01:44:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-07T01:44:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.evgo.com/",
+      "Comments": "Imported by ADFC import",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 15,
+      "Title": "eVgo Network"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
       "IsOperational": true,
       "IsUserSelectable": true,
       "ID": 50,
@@ -52,9 +190,9 @@
     "PercentageSimilarity": null,
     "MediaItems": null,
     "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-07-02T02:43:00Z",
-    "ID": 459052,
-    "UUID": "EEE728A7-D9C3-45D8-B431-F90B47DACAB6",
+    "DateLastVerified": "2025-07-07T01:22:00Z",
+    "ID": 459318,
+    "UUID": "793FFF3E-A1F2-422C-B3F0-630E226F806C",
     "ParentChargePointID": null,
     "DataProviderID": 1,
     "DataProvidersReference": null,
@@ -63,13 +201,13 @@
     "UsageTypeID": 1,
     "UsageCost": null,
     "AddressInfo": {
-      "ID": 459441,
-      "Title": "Pilot Travel Center #1219 Vandalia, IL",
-      "AddressLine1": "10 Interstate Drive",
+      "ID": 459707,
+      "Title": "Flying J Travel Center #621",
+      "AddressLine1": "2495 Williams Ave",
       "AddressLine2": null,
-      "Town": "Vandalia",
-      "StateOrProvince": "IL",
-      "Postcode": "62471",
+      "Town": "Limon",
+      "StateOrProvince": "CO",
+      "Postcode": "80828 ",
       "CountryID": 2,
       "Country": {
         "ISOCode": "US",
@@ -77,19 +215,19 @@
         "ID": 2,
         "Title": "United States"
       },
-      "Latitude": 38.97116855689532,
-      "Longitude": -89.13635955994408,
+      "Latitude": 39.275631467002256,
+      "Longitude": -103.70894343925073,
       "ContactTelephone1": null,
       "ContactTelephone2": null,
       "ContactEmail": null,
-      "AccessComments": "I-70 Exit 61",
-      "RelatedURL": "https://locations.pilotflyingj.com/us/il/vandalia/10-interstate-drive",
+      "AccessComments": "I-70 & Exit 359",
+      "RelatedURL": null,
       "Distance": null,
       "DistanceUnit": 0
     },
     "Connections": [
       {
-        "ID": 771623,
+        "ID": 772383,
         "ConnectionTypeID": 32,
         "ConnectionType": {
           "FormalName": "IEC 62196-3 Configuration EE",
@@ -126,15 +264,15 @@
         "Comments": null
       }
     ],
-    "NumberOfPoints": 1,
+    "NumberOfPoints": 4,
     "GeneralComments": null,
     "DatePlanned": null,
     "DateLastConfirmed": null,
     "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-07-02T02:43:00Z",
+    "DateLastStatusUpdate": "2025-07-07T01:22:00Z",
     "MetadataValues": null,
     "DataQualityLevel": 1,
-    "DateCreated": "2025-07-02T02:43:00Z",
+    "DateCreated": "2025-07-07T01:22:00Z",
     "SubmissionStatusTypeID": 200
   },
   {
@@ -190,9 +328,9 @@
     "PercentageSimilarity": null,
     "MediaItems": null,
     "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-07-02T01:39:00Z",
-    "ID": 459046,
-    "UUID": "99FC8011-2E35-409A-A138-4252AADFB6ED",
+    "DateLastVerified": "2025-07-07T01:14:00Z",
+    "ID": 459317,
+    "UUID": "BB410217-986C-4189-81E7-FFE2D200C701",
     "ParentChargePointID": null,
     "DataProviderID": 1,
     "DataProvidersReference": null,
@@ -201,13 +339,13 @@
     "UsageTypeID": 1,
     "UsageCost": null,
     "AddressInfo": {
-      "ID": 459435,
-      "Title": "The Crossroads - Madera, CA",
-      "AddressLine1": "1426 E Yosemite Ave",
+      "ID": 459706,
+      "Title": "Pilot Travel Center #592 Grand Junction, CO",
+      "AddressLine1": "2195 Hwy 6 and 50",
       "AddressLine2": null,
-      "Town": "Madera",
-      "StateOrProvince": "CA",
-      "Postcode": "93638, ",
+      "Town": "Grand Junction",
+      "StateOrProvince": "CO",
+      "Postcode": "81505",
       "CountryID": 2,
       "Country": {
         "ISOCode": "US",
@@ -215,19 +353,19 @@
         "ID": 2,
         "Title": "United States"
       },
-      "Latitude": 36.971627356583554,
-      "Longitude": -120.04443330501772,
+      "Latitude": 39.11255160061671,
+      "Longitude": -108.64900660451883,
       "ContactTelephone1": null,
       "ContactTelephone2": null,
       "ContactEmail": null,
-      "AccessComments": null,
-      "RelatedURL": null,
+      "AccessComments": "I-70, Exit 26",
+      "RelatedURL": "https://locations.pilotflyingj.com/us/co/grand-junction/2195-hwy-6-and-50",
       "Distance": null,
       "DistanceUnit": 0
     },
     "Connections": [
       {
-        "ID": 771616,
+        "ID": 772382,
         "ConnectionTypeID": 32,
         "ConnectionType": {
           "FormalName": "IEC 62196-3 Configuration EE",
@@ -260,295 +398,19 @@
           "ID": 30,
           "Title": "DC"
         },
-        "Quantity": 6,
+        "Quantity": 4,
         "Comments": null
       }
     ],
-    "NumberOfPoints": 1,
-    "GeneralComments": "3 chargers, 6 plugs",
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-07-02T01:39:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-07-02T01:39:00Z",
-    "SubmissionStatusTypeID": 200
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://openchargemap.org",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 1,
-        "Title": "Manual Data Entry"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "DateLastImported": null,
-      "ID": 1,
-      "Title": "Open Charge Map Contributors"
-    },
-    "OperatorInfo": {
-      "WebsiteURL": "https://www.evgo.com/",
-      "Comments": "Imported by ADFC import",
-      "PhonePrimaryContact": null,
-      "PhoneSecondaryContact": null,
-      "IsPrivateIndividual": false,
-      "AddressInfo": null,
-      "BookingURL": null,
-      "ContactEmail": null,
-      "FaultReportEmail": null,
-      "IsRestrictedEdit": false,
-      "ID": 15,
-      "Title": "eVgo Network"
-    },
-    "UsageType": {
-      "IsPayAtLocation": null,
-      "IsMembershipRequired": null,
-      "IsAccessKeyRequired": null,
-      "ID": 1,
-      "Title": "Public"
-    },
-    "StatusType": {
-      "IsOperational": true,
-      "IsUserSelectable": true,
-      "ID": 50,
-      "Title": "Operational"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 200,
-      "Title": "Submission Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-07-02T01:29:00Z",
-    "ID": 459045,
-    "UUID": "1C761F8B-E1DD-428E-A247-F6D105B35A99",
-    "ParentChargePointID": null,
-    "DataProviderID": 1,
-    "DataProvidersReference": null,
-    "OperatorID": 15,
-    "OperatorsReference": null,
-    "UsageTypeID": 1,
-    "UsageCost": null,
-    "AddressInfo": {
-      "ID": 459434,
-      "Title": "Bayview Plaza",
-      "AddressLine1": "3911 3rd Street",
-      "AddressLine2": null,
-      "Town": "San Francisco",
-      "StateOrProvince": "CA",
-      "Postcode": "94124",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 37.74147999999836,
-      "Longitude": -122.38799000000006,
-      "ContactTelephone1": null,
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": null,
-      "RelatedURL": null,
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771615,
-        "ConnectionTypeID": 32,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration EE",
-          "IsDiscontinued": false,
-          "IsObsolete": false,
-          "ID": 32,
-          "Title": "CCS (Type 1)"
-        },
-        "Reference": null,
-        "StatusTypeID": 50,
-        "StatusType": {
-          "IsOperational": true,
-          "IsUserSelectable": true,
-          "ID": 50,
-          "Title": "Operational"
-        },
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 350,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 6,
-        "Comments": null
-      }
-    ],
-    "NumberOfPoints": 1,
-    "GeneralComments": "3 charging post 6 ports",
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-07-02T01:29:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-07-02T01:29:00Z",
-    "SubmissionStatusTypeID": 200
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://openchargemap.org",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 1,
-        "Title": "Manual Data Entry"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "DateLastImported": null,
-      "ID": 1,
-      "Title": "Open Charge Map Contributors"
-    },
-    "OperatorInfo": {
-      "WebsiteURL": "https://www.evgo.com/",
-      "Comments": "Imported by ADFC import",
-      "PhonePrimaryContact": null,
-      "PhoneSecondaryContact": null,
-      "IsPrivateIndividual": false,
-      "AddressInfo": null,
-      "BookingURL": null,
-      "ContactEmail": null,
-      "FaultReportEmail": null,
-      "IsRestrictedEdit": false,
-      "ID": 15,
-      "Title": "eVgo Network"
-    },
-    "UsageType": {
-      "IsPayAtLocation": null,
-      "IsMembershipRequired": null,
-      "IsAccessKeyRequired": null,
-      "ID": 1,
-      "Title": "Public"
-    },
-    "StatusType": {
-      "IsOperational": true,
-      "IsUserSelectable": true,
-      "ID": 50,
-      "Title": "Operational"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 200,
-      "Title": "Submission Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-07-01T01:23:00Z",
-    "ID": 459031,
-    "UUID": "DDC1D1F3-3E27-4201-B61B-80BED67D3BC5",
-    "ParentChargePointID": null,
-    "DataProviderID": 1,
-    "DataProvidersReference": null,
-    "OperatorID": 15,
-    "OperatorsReference": null,
-    "UsageTypeID": 1,
-    "UsageCost": null,
-    "AddressInfo": {
-      "ID": 459420,
-      "Title": "Courtyard Shopping Center",
-      "AddressLine1": "2140 Contra Costa Blvd",
-      "AddressLine2": null,
-      "Town": "Pleasant Hill",
-      "StateOrProvince": "CA",
-      "Postcode": "94523",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 37.946177940420455,
-      "Longitude": -122.05904507298175,
-      "ContactTelephone1": null,
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": null,
-      "RelatedURL": null,
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771589,
-        "ConnectionTypeID": 32,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration EE",
-          "IsDiscontinued": false,
-          "IsObsolete": false,
-          "ID": 32,
-          "Title": "CCS (Type 1)"
-        },
-        "Reference": null,
-        "StatusTypeID": 50,
-        "StatusType": {
-          "IsOperational": true,
-          "IsUserSelectable": true,
-          "ID": 50,
-          "Title": "Operational"
-        },
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 350,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 8,
-        "Comments": "4 post, 8 plugs"
-      }
-    ],
-    "NumberOfPoints": 8,
+    "NumberOfPoints": 4,
     "GeneralComments": null,
     "DatePlanned": null,
     "DateLastConfirmed": null,
     "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-07-01T01:23:00Z",
+    "DateLastStatusUpdate": "2025-07-07T01:14:00Z",
     "MetadataValues": null,
     "DataQualityLevel": 1,
-    "DateCreated": "2025-07-01T01:23:00Z",
+    "DateCreated": "2025-07-07T01:14:00Z",
     "SubmissionStatusTypeID": 200
   },
   {
@@ -569,7 +431,559 @@
       "Title": "Open Charge Map Contributors"
     },
     "OperatorInfo": {
-      "WebsiteURL": "https://www.mbusa.com/en/ev-charging-stations",
+      "WebsiteURL": "https://www.evgo.com/",
+      "Comments": "Imported by ADFC import",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 15,
+      "Title": "eVgo Network"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-07T01:10:00Z",
+    "ID": 459316,
+    "UUID": "356E32B1-91EC-4E37-9A81-2CBA28D65A23",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 15,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459705,
+      "Title": "Flying J Travel Center #623 Midway, FL",
+      "AddressLine1": "32670 Blue Star Hwy",
+      "AddressLine2": null,
+      "Town": "Midway",
+      "StateOrProvince": "FL",
+      "Postcode": "32343",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 30.493005291716344,
+      "Longitude": -84.42877274131558,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": "I-10, Exit 192",
+      "RelatedURL": "https://locations.pilotflyingj.com/us/fl/midway/32670-blue-star-hwy",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772381,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 350,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-07-07T01:10:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-07T01:10:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.evgo.com/",
+      "Comments": "Imported by ADFC import",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 15,
+      "Title": "eVgo Network"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-07T01:03:00Z",
+    "ID": 459314,
+    "UUID": "B85CEEB1-3B7F-4A18-8428-F0FE458F76D8",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 15,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459703,
+      "Title": "Flying J Travel Center #726 Dallas, TX",
+      "AddressLine1": "7425 Bonnie View Road",
+      "AddressLine2": null,
+      "Town": "Dallas",
+      "StateOrProvince": "TX",
+      "Postcode": "75241",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 32.65600861444996,
+      "Longitude": -96.75107710882565,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": " I-20 Exit 472",
+      "RelatedURL": null,
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772378,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 350,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-07-07T01:03:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-07T01:03:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.evgo.com/",
+      "Comments": "Imported by ADFC import",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 15,
+      "Title": "eVgo Network"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-07T00:58:00Z",
+    "ID": 459313,
+    "UUID": "68F6CE8F-CE99-40FA-9E6A-4C964AA77A4D",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 15,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459702,
+      "Title": "Pilot Travel Center #252 Kearney, MO",
+      "AddressLine1": "600 W MO-92",
+      "AddressLine2": null,
+      "Town": "Kearney",
+      "StateOrProvince": "MO",
+      "Postcode": "64060 ",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 39.36809480529226,
+      "Longitude": -94.37423192496641,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": "I-35, Exit 26",
+      "RelatedURL": "https://locations.pilotflyingj.com/us/mo/kearney/600-w-mo-92",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772377,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 350,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "2 chargers, 4 plugs",
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-07-07T00:58:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-07T00:58:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.evgo.com/",
+      "Comments": "Imported by ADFC import",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 15,
+      "Title": "eVgo Network"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-07T00:37:00Z",
+    "ID": 459312,
+    "UUID": "EC903125-2F06-45D2-8584-4D55263E8E62",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 15,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459701,
+      "Title": "Pilot Travel Center #43 Walcott, IA",
+      "AddressLine1": "3500 North Plainview Road",
+      "AddressLine2": null,
+      "Town": "Walcott",
+      "StateOrProvince": "IA",
+      "Postcode": "52773",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 41.61964472119243,
+      "Longitude": -90.78348685011457,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": "I-80, Exit 284",
+      "RelatedURL": "https://locations.pilotflyingj.com/us/ia/walcott/3500-north-plainview-road",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772376,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 350,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "2 chargers, 4 plugs",
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-07-07T00:37:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-07T00:37:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.ionna.com/",
       "Comments": null,
       "PhonePrimaryContact": null,
       "PhoneSecondaryContact": null,
@@ -579,8 +993,8 @@
       "ContactEmail": null,
       "FaultReportEmail": null,
       "IsRestrictedEdit": false,
-      "ID": 3827,
-      "Title": "Mercedes-Benz High-Power Charging (US)"
+      "ID": 3831,
+      "Title": "IONNA"
     },
     "UsageType": {
       "IsPayAtLocation": null,
@@ -604,24 +1018,24 @@
     "PercentageSimilarity": null,
     "MediaItems": null,
     "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-30T04:41:00Z",
-    "ID": 459017,
-    "UUID": "1C493E79-7BCE-4704-B750-49E130C8CA09",
+    "DateLastVerified": "2025-07-04T20:13:00Z",
+    "ID": 459287,
+    "UUID": "171BBF06-D441-4A0B-95F3-9B929330AB9F",
     "ParentChargePointID": null,
     "DataProviderID": 1,
     "DataProvidersReference": null,
-    "OperatorID": 3827,
+    "OperatorID": 3831,
     "OperatorsReference": null,
     "UsageTypeID": 1,
     "UsageCost": null,
     "AddressInfo": {
-      "ID": 459406,
-      "Title": "Starbucks",
-      "AddressLine1": "525 Adobe Road",
+      "ID": 459676,
+      "Title": "Ionna Winston-Salem Rechargery",
+      "AddressLine1": "145 Jonestown Road",
       "AddressLine2": null,
-      "Town": "Red Bluff",
-      "StateOrProvince": "CA",
-      "Postcode": "96080",
+      "Town": "Winston-Salem",
+      "StateOrProvince": "NC",
+      "Postcode": "27104",
       "CountryID": 2,
       "Country": {
         "ISOCode": "US",
@@ -629,19 +1043,194 @@
         "ID": 2,
         "Title": "United States"
       },
-      "Latitude": 40.19152175534168,
-      "Longitude": -122.23674609255733,
+      "Latitude": 36.077999657475104,
+      "Longitude": -80.334939986368,
       "ContactTelephone1": null,
       "ContactTelephone2": null,
       "ContactEmail": null,
       "AccessComments": null,
-      "RelatedURL": "https://mercedesbenzhpc.com",
+      "RelatedURL": null,
       "Distance": null,
       "DistanceUnit": 0
     },
     "Connections": [
       {
-        "ID": 771567,
+        "ID": 772336,
+        "ConnectionTypeID": 32,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration EE",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 32,
+          "Title": "CCS (Type 1)"
+        },
+        "Reference": null,
+        "StatusTypeID": 150,
+        "StatusType": {
+          "IsOperational": false,
+          "IsUserSelectable": true,
+          "ID": 150,
+          "Title": "Planned For Future Date"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 400,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 8,
+        "Comments": null
+      },
+      {
+        "ID": 772337,
+        "ConnectionTypeID": 27,
+        "ConnectionType": {
+          "FormalName": "SAE J3400",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 27,
+          "Title": "NACS / Tesla Supercharger"
+        },
+        "Reference": null,
+        "StatusTypeID": 150,
+        "StatusType": {
+          "IsOperational": false,
+          "IsUserSelectable": true,
+          "ID": 150,
+          "Title": "Planned For Future Date"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 400,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
+        "Comments": null
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 150,
+    "DateLastStatusUpdate": "2025-07-04T20:13:00Z",
+    "MetadataValues": null,
+    "DataQualityLevel": 1,
+    "DateCreated": "2025-07-04T20:13:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.ionna.com/",
+      "Comments": null,
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 3831,
+      "Title": "IONNA"
+    },
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 150,
+      "Title": "Planned For Future Date"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "MediaItems": null,
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2025-07-04T20:08:00Z",
+    "ID": 459286,
+    "UUID": "93919F56-4B4A-4F55-87A7-88BB793AF1D3",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvidersReference": null,
+    "OperatorID": 3831,
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 459675,
+      "Title": "Ionna - Jacksonville Rechargery",
+      "AddressLine1": "660 Cahoon Road South",
+      "AddressLine2": null,
+      "Town": "Jacksonville",
+      "StateOrProvince": "FL",
+      "Postcode": "32221",
+      "CountryID": 2,
+      "Country": {
+        "ISOCode": "US",
+        "ContinentCode": "NA",
+        "ID": 2,
+        "Title": "United States"
+      },
+      "Latitude": 30.31396900000162,
+      "Longitude": -81.78406200000165,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": null,
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "Connections": [
+      {
+        "ID": 772334,
         "ConnectionTypeID": 32,
         "ConnectionType": {
           "FormalName": "IEC 62196-3 Configuration EE",
@@ -670,19 +1259,56 @@
         "PowerKW": 400,
         "CurrentTypeID": null,
         "CurrentType": null,
-        "Quantity": 1,
+        "Quantity": 12,
+        "Comments": null
+      },
+      {
+        "ID": 772335,
+        "ConnectionTypeID": 27,
+        "ConnectionType": {
+          "FormalName": "SAE J3400",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 27,
+          "Title": "NACS / Tesla Supercharger"
+        },
+        "Reference": null,
+        "StatusTypeID": 150,
+        "StatusType": {
+          "IsOperational": false,
+          "IsUserSelectable": true,
+          "ID": 150,
+          "Title": "Planned For Future Date"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 400,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 8,
         "Comments": null
       }
     ],
-    "NumberOfPoints": null,
-    "GeneralComments": "planned 4 ports",
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
     "DatePlanned": null,
     "DateLastConfirmed": null,
     "StatusTypeID": 150,
-    "DateLastStatusUpdate": "2025-06-30T04:41:00Z",
+    "DateLastStatusUpdate": "2025-07-04T20:08:00Z",
     "MetadataValues": null,
     "DataQualityLevel": 1,
-    "DateCreated": "2025-06-30T04:41:00Z",
+    "DateCreated": "2025-07-04T20:08:00Z",
     "SubmissionStatusTypeID": 200
   },
   {
@@ -703,7 +1329,7 @@
       "Title": "Open Charge Map Contributors"
     },
     "OperatorInfo": {
-      "WebsiteURL": "https://shellrecharge.com/en-us/solutions",
+      "WebsiteURL": "https://www.ionna.com/",
       "Comments": null,
       "PhonePrimaryContact": null,
       "PhoneSecondaryContact": null,
@@ -713,8 +1339,8 @@
       "ContactEmail": null,
       "FaultReportEmail": null,
       "IsRestrictedEdit": false,
-      "ID": 59,
-      "Title": "Shell Recharge Solutions (US)"
+      "ID": 3831,
+      "Title": "IONNA"
     },
     "UsageType": {
       "IsPayAtLocation": null,
@@ -738,24 +1364,24 @@
     "PercentageSimilarity": null,
     "MediaItems": null,
     "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-29T21:40:00Z",
-    "ID": 459014,
-    "UUID": "7E9293F8-02F4-47C7-AF46-F7EE0286D33E",
+    "DateLastVerified": "2025-07-04T20:03:00Z",
+    "ID": 459285,
+    "UUID": "A3597B57-A09A-4F87-86BE-0BE96250F99C",
     "ParentChargePointID": null,
     "DataProviderID": 1,
     "DataProvidersReference": null,
-    "OperatorID": 59,
+    "OperatorID": 3831,
     "OperatorsReference": null,
     "UsageTypeID": 1,
     "UsageCost": null,
     "AddressInfo": {
-      "ID": 459403,
-      "Title": "Shell Recharge - Torrance, CA",
-      "AddressLine1": "4903 Torrance Blvd",
+      "ID": 459674,
+      "Title": "Ionna - Orlando Rechargery",
+      "AddressLine1": "7785 Palm Pkwy.",
       "AddressLine2": null,
-      "Town": "Torrance",
-      "StateOrProvince": "CA",
-      "Postcode": "90503",
+      "Town": "Orlando",
+      "StateOrProvince": "FL",
+      "Postcode": "32836",
       "CountryID": 2,
       "Country": {
         "ISOCode": "US",
@@ -763,8 +1389,8 @@
         "ID": 2,
         "Title": "United States"
       },
-      "Latitude": 33.83778999999919,
-      "Longitude": -118.36577000000142,
+      "Latitude": 28.398705967965824,
+      "Longitude": -81.4894094647612,
       "ContactTelephone1": null,
       "ContactTelephone2": null,
       "ContactEmail": null,
@@ -775,140 +1401,7 @@
     },
     "Connections": [
       {
-        "ID": 771562,
-        "ConnectionTypeID": 32,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration EE",
-          "IsDiscontinued": false,
-          "IsObsolete": false,
-          "ID": 32,
-          "Title": "CCS (Type 1)"
-        },
-        "Reference": null,
-        "StatusTypeID": 150,
-        "StatusType": {
-          "IsOperational": false,
-          "IsUserSelectable": true,
-          "ID": 150,
-          "Title": "Planned For Future Date"
-        },
-        "LevelID": null,
-        "Level": null,
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": null,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 10,
-        "Comments": null
-      }
-    ],
-    "NumberOfPoints": 1,
-    "GeneralComments": null,
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 150,
-    "DateLastStatusUpdate": "2025-06-29T21:40:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-06-29T21:40:00Z",
-    "SubmissionStatusTypeID": 200
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://openchargemap.org",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 1,
-        "Title": "Manual Data Entry"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "DateLastImported": null,
-      "ID": 1,
-      "Title": "Open Charge Map Contributors"
-    },
-    "OperatorInfo": {
-      "WebsiteURL": null,
-      "Comments": null,
-      "PhonePrimaryContact": null,
-      "PhoneSecondaryContact": null,
-      "IsPrivateIndividual": null,
-      "AddressInfo": null,
-      "BookingURL": null,
-      "ContactEmail": null,
-      "FaultReportEmail": null,
-      "IsRestrictedEdit": null,
-      "ID": 1,
-      "Title": "(Unknown Operator)"
-    },
-    "UsageType": {
-      "IsPayAtLocation": false,
-      "IsMembershipRequired": true,
-      "IsAccessKeyRequired": true,
-      "ID": 4,
-      "Title": "Public - Membership Required"
-    },
-    "StatusType": {
-      "IsOperational": false,
-      "IsUserSelectable": true,
-      "ID": 150,
-      "Title": "Planned For Future Date"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 200,
-      "Title": "Submission Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-26T23:35:00Z",
-    "ID": 458938,
-    "UUID": "C6D95D0C-488A-420B-B67F-8D73CB1759EE",
-    "ParentChargePointID": null,
-    "DataProviderID": 1,
-    "DataProvidersReference": null,
-    "OperatorID": 1,
-    "OperatorsReference": null,
-    "UsageTypeID": 4,
-    "UsageCost": null,
-    "AddressInfo": {
-      "ID": 459327,
-      "Title": "Skycharger SFO",
-      "AddressLine1": "349 S McDonnell Road",
-      "AddressLine2": null,
-      "Town": "Millbrae",
-      "StateOrProvince": "CA",
-      "Postcode": "94030",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 37.6043776024964,
-      "Longitude": -122.3790573600329,
-      "ContactTelephone1": null,
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": null,
-      "RelatedURL": null,
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771457,
+        "ID": 772332,
         "ConnectionTypeID": 32,
         "ConnectionType": {
           "FormalName": "IEC 62196-3 Configuration EE",
@@ -941,7 +1434,44 @@
           "ID": 30,
           "Title": "DC"
         },
-        "Quantity": 24,
+        "Quantity": 4,
+        "Comments": null
+      },
+      {
+        "ID": 772333,
+        "ConnectionTypeID": 27,
+        "ConnectionType": {
+          "FormalName": "SAE J3400",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 27,
+          "Title": "NACS / Tesla Supercharger"
+        },
+        "Reference": null,
+        "StatusTypeID": 150,
+        "StatusType": {
+          "IsOperational": false,
+          "IsUserSelectable": true,
+          "ID": 150,
+          "Title": "Planned For Future Date"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 400,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 4,
         "Comments": null
       }
     ],
@@ -950,497 +1480,10 @@
     "DatePlanned": null,
     "DateLastConfirmed": null,
     "StatusTypeID": 150,
-    "DateLastStatusUpdate": "2025-06-26T23:35:00Z",
+    "DateLastStatusUpdate": "2025-07-04T20:03:00Z",
     "MetadataValues": null,
     "DataQualityLevel": 1,
-    "DateCreated": "2025-06-26T23:35:00Z",
+    "DateCreated": "2025-07-04T20:03:00Z",
     "SubmissionStatusTypeID": 200
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://openchargemap.org",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 1,
-        "Title": "Manual Data Entry"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "DateLastImported": null,
-      "ID": 1,
-      "Title": "Open Charge Map Contributors"
-    },
-    "OperatorInfo": {
-      "WebsiteURL": null,
-      "Comments": null,
-      "PhonePrimaryContact": null,
-      "PhoneSecondaryContact": null,
-      "IsPrivateIndividual": null,
-      "AddressInfo": null,
-      "BookingURL": null,
-      "ContactEmail": null,
-      "FaultReportEmail": null,
-      "IsRestrictedEdit": null,
-      "ID": 1,
-      "Title": "(Unknown Operator)"
-    },
-    "UsageType": {
-      "IsPayAtLocation": true,
-      "IsMembershipRequired": false,
-      "IsAccessKeyRequired": false,
-      "ID": 5,
-      "Title": "Public - Pay At Location"
-    },
-    "StatusType": {
-      "IsOperational": true,
-      "IsUserSelectable": true,
-      "ID": 50,
-      "Title": "Operational"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 200,
-      "Title": "Submission Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-28T08:24:00Z",
-    "ID": 458921,
-    "UUID": "82B42211-2CEA-4E5D-B0E0-32242C96BD0E",
-    "ParentChargePointID": null,
-    "DataProviderID": 1,
-    "DataProvidersReference": null,
-    "OperatorID": 1,
-    "OperatorsReference": null,
-    "UsageTypeID": 5,
-    "UsageCost": "$0.40/kWh",
-    "AddressInfo": {
-      "ID": 459310,
-      "Title": "Wingate by Wyndham",
-      "AddressLine1": "5094 State Park Road",
-      "AddressLine2": null,
-      "Town": "Dublin",
-      "StateOrProvince": "VA",
-      "Postcode": "24084",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 37.08338444542498,
-      "Longitude": -80.64793378906455,
-      "ContactTelephone1": null,
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": null,
-      "RelatedURL": null,
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771429,
-        "ConnectionTypeID": 1,
-        "ConnectionType": {
-          "FormalName": "SAE J1772-2009",
-          "IsDiscontinued": null,
-          "IsObsolete": null,
-          "ID": 1,
-          "Title": "Type 1 (J1772)"
-        },
-        "Reference": null,
-        "StatusTypeID": 50,
-        "StatusType": {
-          "IsOperational": true,
-          "IsUserSelectable": true,
-          "ID": 50,
-          "Title": "Operational"
-        },
-        "LevelID": 2,
-        "Level": {
-          "Comments": "Over 2 kW, usually non-domestic socket type",
-          "IsFastChargeCapable": false,
-          "ID": 2,
-          "Title": "Level 2 : Medium (Over 2kW)"
-        },
-        "Amps": 46,
-        "Voltage": 240,
-        "PowerKW": 11.1,
-        "CurrentTypeID": 10,
-        "CurrentType": {
-          "Description": "Alternating Current - Single Phase",
-          "ID": 10,
-          "Title": "AC (Single-Phase)"
-        },
-        "Quantity": 2,
-        "Comments": null
-      }
-    ],
-    "NumberOfPoints": 2,
-    "GeneralComments": "EnviroSpark network",
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-06-28T08:24:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-06-25T08:19:00Z",
-    "SubmissionStatusTypeID": 200
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://www.afdc.energy.gov/",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 20,
-        "Title": "Automated Import"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "This data is provided by the National Renewable Energy Laboratory (\"NREL\"), which is operated by the Alliance for Sustainable Energy, LLC (\"Alliance\"), for the U.S. Department of Energy (\"DOE\"), and may be used for any purpose whatsoever.",
-      "DateLastImported": "2025-06-24T08:20:34.437Z",
-      "ID": 2,
-      "Title": "afdc.energy.gov"
-    },
-    "OperatorInfo": null,
-    "UsageType": {
-      "IsPayAtLocation": null,
-      "IsMembershipRequired": null,
-      "IsAccessKeyRequired": null,
-      "ID": 1,
-      "Title": "Public"
-    },
-    "StatusType": {
-      "IsOperational": true,
-      "IsUserSelectable": true,
-      "ID": 50,
-      "Title": "Operational"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 100,
-      "Title": "Imported and Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-24T08:20:00Z",
-    "ID": 458901,
-    "UUID": "9714C6D6-817E-484F-95E0-F73E845DA058",
-    "ParentChargePointID": null,
-    "DataProviderID": 2,
-    "DataProvidersReference": "202649",
-    "OperatorID": null,
-    "OperatorsReference": null,
-    "UsageTypeID": 1,
-    "UsageCost": null,
-    "AddressInfo": {
-      "ID": 459290,
-      "Title": "Three Bears Healy",
-      "AddressLine1": "248.7 Parks Hwy",
-      "AddressLine2": null,
-      "Town": "Healy",
-      "StateOrProvince": "AK",
-      "Postcode": "99743",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 63.86753849,
-      "Longitude": -149.02304,
-      "ContactTelephone1": "NA",
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": "24 hours daily",
-      "RelatedURL": "",
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771404,
-        "ConnectionTypeID": 1,
-        "ConnectionType": {
-          "FormalName": "SAE J1772-2009",
-          "IsDiscontinued": null,
-          "IsObsolete": null,
-          "ID": 1,
-          "Title": "Type 1 (J1772)"
-        },
-        "Reference": null,
-        "StatusTypeID": null,
-        "StatusType": null,
-        "LevelID": 2,
-        "Level": {
-          "Comments": "Over 2 kW, usually non-domestic socket type",
-          "IsFastChargeCapable": false,
-          "ID": 2,
-          "Title": "Level 2 : Medium (Over 2kW)"
-        },
-        "Amps": 16,
-        "Voltage": 230,
-        "PowerKW": 3.7,
-        "CurrentTypeID": 10,
-        "CurrentType": {
-          "Description": "Alternating Current - Single Phase",
-          "ID": 10,
-          "Title": "AC (Single-Phase)"
-        },
-        "Quantity": 2,
-        "Comments": "kW power is an estimate based on the connection type"
-      },
-      {
-        "ID": 771405,
-        "ConnectionTypeID": 2,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration AA",
-          "IsDiscontinued": null,
-          "IsObsolete": null,
-          "ID": 2,
-          "Title": "CHAdeMO"
-        },
-        "Reference": null,
-        "StatusTypeID": null,
-        "StatusType": null,
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 50,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 1,
-        "Comments": "kW power is an estimate based on the connection type"
-      },
-      {
-        "ID": 771406,
-        "ConnectionTypeID": 32,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration EE",
-          "IsDiscontinued": false,
-          "IsObsolete": false,
-          "ID": 32,
-          "Title": "CCS (Type 1)"
-        },
-        "Reference": null,
-        "StatusTypeID": null,
-        "StatusType": null,
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 50,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 1,
-        "Comments": "kW power is an estimate based on the connection type"
-      }
-    ],
-    "NumberOfPoints": null,
-    "GeneralComments": null,
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-06-24T08:20:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 3,
-    "DateCreated": "2025-06-24T08:20:00Z",
-    "SubmissionStatusTypeID": 100
-  },
-  {
-    "DataProvider": {
-      "WebsiteURL": "http://www.afdc.energy.gov/",
-      "Comments": null,
-      "DataProviderStatusType": {
-        "IsProviderEnabled": true,
-        "ID": 20,
-        "Title": "Automated Import"
-      },
-      "IsRestrictedEdit": false,
-      "IsOpenDataLicensed": true,
-      "IsApprovedImport": true,
-      "License": "This data is provided by the National Renewable Energy Laboratory (\"NREL\"), which is operated by the Alliance for Sustainable Energy, LLC (\"Alliance\"), for the U.S. Department of Energy (\"DOE\"), and may be used for any purpose whatsoever.",
-      "DateLastImported": "2025-06-24T08:20:34.437Z",
-      "ID": 2,
-      "Title": "afdc.energy.gov"
-    },
-    "OperatorInfo": {
-      "WebsiteURL": "http://www.chargepoint.net/",
-      "Comments": "GB*CPI,AT*HTB",
-      "PhonePrimaryContact": "1-408-841-4500",
-      "PhoneSecondaryContact": null,
-      "IsPrivateIndividual": false,
-      "AddressInfo": null,
-      "BookingURL": null,
-      "ContactEmail": null,
-      "FaultReportEmail": null,
-      "IsRestrictedEdit": false,
-      "ID": 5,
-      "Title": "ChargePoint"
-    },
-    "UsageType": {
-      "IsPayAtLocation": null,
-      "IsMembershipRequired": null,
-      "IsAccessKeyRequired": null,
-      "ID": 1,
-      "Title": "Public"
-    },
-    "StatusType": {
-      "IsOperational": true,
-      "IsUserSelectable": true,
-      "ID": 50,
-      "Title": "Operational"
-    },
-    "SubmissionStatus": {
-      "IsLive": true,
-      "ID": 100,
-      "Title": "Imported and Published"
-    },
-    "UserComments": null,
-    "PercentageSimilarity": null,
-    "MediaItems": null,
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-24T08:16:00Z",
-    "ID": 458880,
-    "UUID": "68F8B8D9-054F-4AF3-BDC0-43CDA6CE9DAE",
-    "ParentChargePointID": null,
-    "DataProviderID": 2,
-    "DataProvidersReference": "169454",
-    "OperatorID": 5,
-    "OperatorsReference": null,
-    "UsageTypeID": 1,
-    "UsageCost": null,
-    "AddressInfo": {
-      "ID": 459269,
-      "Title": "V.C. STATION BF FAST CHARGER",
-      "AddressLine1": "6373 Bonner St",
-      "AddressLine2": null,
-      "Town": "Bonners Ferry",
-      "StateOrProvince": "ID",
-      "Postcode": "83805",
-      "CountryID": 2,
-      "Country": {
-        "ISOCode": "US",
-        "ContinentCode": "NA",
-        "ID": 2,
-        "Title": "United States"
-      },
-      "Latitude": 48.697326,
-      "Longitude": -116.310344,
-      "ContactTelephone1": "888-758-4389",
-      "ContactTelephone2": null,
-      "ContactEmail": null,
-      "AccessComments": "24 hours daily",
-      "RelatedURL": "https://www.chargepoint.com",
-      "Distance": null,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771363,
-        "ConnectionTypeID": 2,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration AA",
-          "IsDiscontinued": null,
-          "IsObsolete": null,
-          "ID": 2,
-          "Title": "CHAdeMO"
-        },
-        "Reference": null,
-        "StatusTypeID": null,
-        "StatusType": null,
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 50,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 1,
-        "Comments": "kW power is an estimate based on the connection type"
-      },
-      {
-        "ID": 771364,
-        "ConnectionTypeID": 32,
-        "ConnectionType": {
-          "FormalName": "IEC 62196-3 Configuration EE",
-          "IsDiscontinued": false,
-          "IsObsolete": false,
-          "ID": 32,
-          "Title": "CCS (Type 1)"
-        },
-        "Reference": null,
-        "StatusTypeID": null,
-        "StatusType": null,
-        "LevelID": 3,
-        "Level": {
-          "Comments": "40KW and Higher",
-          "IsFastChargeCapable": true,
-          "ID": 3,
-          "Title": "Level 3:  High (Over 40kW)"
-        },
-        "Amps": null,
-        "Voltage": null,
-        "PowerKW": 50,
-        "CurrentTypeID": 30,
-        "CurrentType": {
-          "Description": "Direct Current",
-          "ID": 30,
-          "Title": "DC"
-        },
-        "Quantity": 1,
-        "Comments": "kW power is an estimate based on the connection type"
-      }
-    ],
-    "NumberOfPoints": null,
-    "GeneralComments": null,
-    "DatePlanned": null,
-    "DateLastConfirmed": null,
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-06-24T08:16:00Z",
-    "MetadataValues": null,
-    "DataQualityLevel": 3,
-    "DateCreated": "2025-06-24T08:16:00Z",
-    "SubmissionStatusTypeID": 100
   }
 ]

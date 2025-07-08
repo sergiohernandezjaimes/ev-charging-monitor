@@ -1,5 +1,10 @@
+import os
 import requests
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv("OPENCHARGEMAP_API_KEY")
 
 def fetch_ev_stations_sf():
     url = "https://api.openchargemap.io/v3/poi/"
@@ -11,12 +16,10 @@ def fetch_ev_stations_sf():
         "longitude": -122.4194,
         "distance": 10,
         "distanceunit": "Miles",
+        "key": api_key
     }
-    headers = {
-        "X-API-Key": "a6092917-0057-4768-8cf9-ca86725e6310", # This is a public test key
-    }
-
-    response = requests.get(url, headers=headers, params=params)
+    
+    response = requests.get(url, params=params)
 
     if response.status_code == 200:
         data = response.json()
