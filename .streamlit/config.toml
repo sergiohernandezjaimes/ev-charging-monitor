@@ -1,0 +1,5 @@
+[server]
+headless = true
+
+[general]
+mainPage = "app.py"
