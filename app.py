@@ -1,19 +1,50 @@
 # app.py
 # Streamlit dashboard for visualizing EV charging session log
 
+import streamlit as st
+st.set_page_config(page_title="EV Charging Monitor", layout="wide")
+
 from charging_map import render_station_map
 from streamlit_folium import folium_static
-import streamlit as st
 import pandas as pd
 import os
+import json
+import streamlit.components.v1 as components
+
+st.title("EV Charging Monitor - San Francisco")
+
+# Load station data
+with open("data/ev_api_results.json") as f:
+    station_data = json.load(f)
+
+# Extract unique charger levels
+all_levels = sorted(set(
+    level for station in station_data
+    for level in station.get("charger_levels", [])
+))
+
+# Map numeric levels to names
+level_map = {1: "Level 1", 2: "Level 2", 3: "Level 3"}
+level_options = [level_map.get(lvl, f"Level {lvl}") for lvl in all_levels]
+
+selected_level_label = st.selectbox("Filter by Charger Level", ["ALL"] + level_options)
+
+# Reverse map label to number
+selected_level = None
+for num, label in level_map.items():
+    if label == selected_level_label:
+        selected_level = num
+        break
+
+# Render the map
+map_html = render_station_map(station_data, charger_level_filter=selected_level if selected_level_label != "ALL" else None)
 
 # ----------------------------
 # Visual Layout (Map)
 # ----------------------------
-st.set_page_config(page_title="EV Charging Monitor", layout="wide")
 st.title("EV Charging Session Monitor")
 st.subheader("Charging Station Map (San Francisco)")
-folium_static(render_station_map(), width=800, height=600)
+folium_static(render_station_map(station_data, charger_level_filter=selected_level if selected_level_label != "ALL" else None), width=800, height=600)
 
 # ----------------------------
 # Load session data

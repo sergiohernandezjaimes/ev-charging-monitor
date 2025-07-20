@@ -11,6 +11,7 @@ A growing list of ideas for improving functionality, interactivity, and user exp
 - [ ] Sort/Filter stations by proximity
 - [ ] Filter the session stats by clicking a marker on the map
 - [ ] Route planning with charging stops
+- [ ] Smart filter button to allow user pre filter a better result.
 
 ### ⚡ Charging Station Integration
 

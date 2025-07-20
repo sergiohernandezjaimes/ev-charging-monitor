@@ -1,79 +1,913 @@
 [
   {
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-07-02T01:29:00Z",
-    "ID": 459045,
-    "UUID": "1C761F8B-E1DD-428E-A247-F6D105B35A99",
-    "DataProviderID": 1,
-    "OperatorID": 15,
-    "UsageTypeID": 1,
-    "AddressInfo": {
-      "ID": 459434,
-      "Title": "Bayview Plaza",
-      "AddressLine1": "3911 3rd Street",
-      "Town": "San Francisco",
-      "StateOrProvince": "CA",
-      "Postcode": "94124",
-      "CountryID": 2,
-      "Latitude": 37.74147999999836,
-      "Longitude": -122.38799000000006,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771615,
-        "ConnectionTypeID": 32,
-        "StatusTypeID": 50,
-        "LevelID": 3,
-        "PowerKW": 350,
-        "CurrentTypeID": 30,
-        "Quantity": 6
-      }
-    ],
-    "NumberOfPoints": 1,
-    "GeneralComments": "3 charging post 6 ports",
-    "StatusTypeID": 50,
-    "DateLastStatusUpdate": "2025-07-02T01:29:00Z",
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-07-02T01:29:00Z",
-    "SubmissionStatusTypeID": 200
+    "id": 223308,
+    "title": "City of San Francisco - 49 SVN",
+    "latitude": 37.774142,
+    "longitude": -122.418547,
+    "charger_levels": [
+      2
+    ]
   },
   {
-    "IsRecentlyVerified": true,
-    "DateLastVerified": "2025-06-26T23:35:00Z",
-    "ID": 458938,
-    "UUID": "C6D95D0C-488A-420B-B67F-8D73CB1759EE",
-    "DataProviderID": 1,
-    "OperatorID": 1,
-    "UsageTypeID": 4,
-    "AddressInfo": {
-      "ID": 459327,
-      "Title": "Skycharger SFO",
-      "AddressLine1": "349 S McDonnell Road",
-      "Town": "Millbrae",
-      "StateOrProvince": "CA",
-      "Postcode": "94030",
-      "CountryID": 2,
-      "Latitude": 37.6043776024964,
-      "Longitude": -122.3790573600329,
-      "DistanceUnit": 0
-    },
-    "Connections": [
-      {
-        "ID": 771457,
-        "ConnectionTypeID": 32,
-        "StatusTypeID": 150,
-        "LevelID": 3,
-        "PowerKW": 400,
-        "CurrentTypeID": 30,
-        "Quantity": 24
-      }
-    ],
-    "NumberOfPoints": 1,
-    "StatusTypeID": 150,
-    "DateLastStatusUpdate": "2025-06-26T23:35:00Z",
-    "DataQualityLevel": 1,
-    "DateCreated": "2025-06-26T23:35:00Z",
-    "SubmissionStatusTypeID": 200
+    "id": 340350,
+    "title": "HUDSON PACIFIC 1455 DOCK 1",
+    "latitude": 37.775497,
+    "longitude": -122.41808,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340348,
+    "title": "HUDSON PACIFIC 1455 DOCK 2",
+    "latitude": 37.775448,
+    "longitude": -122.41779,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244540,
+    "title": "HUDSON PACIFIC 1455 STATION 1",
+    "latitude": 37.774933,
+    "longitude": -122.41726,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340336,
+    "title": "HUDSON PACIFIC 1455 STATION 5",
+    "latitude": 37.7749,
+    "longitude": -122.417204,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340334,
+    "title": "HUDSON PACIFIC 1455 STATION 8",
+    "latitude": 37.774868,
+    "longitude": -122.417151,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244538,
+    "title": "HUDSON PACIFIC 1455 STATION 10",
+    "latitude": 37.774846,
+    "longitude": -122.417113,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 276290,
+    "title": "100 Van Ness - Garage - B1",
+    "latitude": 37.7767355,
+    "longitude": -122.4189577,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140926,
+    "title": "NEMA Apartments",
+    "latitude": 37.775819,
+    "longitude": -122.417239,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340351,
+    "title": "Nema Valet Parking Garage DCFC",
+    "latitude": 37.775794,
+    "longitude": -122.417213,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 276291,
+    "title": "150 Van Ness",
+    "latitude": 37.7772738,
+    "longitude": -122.4192281,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340340,
+    "title": "MONOGRAM RES OLUME 1",
+    "latitude": 37.77499,
+    "longitude": -122.41607,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244541,
+    "title": "MONOGRAM RES OLUME 2",
+    "latitude": 37.774966,
+    "longitude": -122.416038,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340355,
+    "title": "Market Square",
+    "latitude": 37.77712,
+    "longitude": -122.41647,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 340360,
+    "title": "CCSF-SFMTA PAG 1",
+    "latitude": 37.777783,
+    "longitude": -122.422554,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340314,
+    "title": "Volvo San Francisco",
+    "latitude": 37.7720226,
+    "longitude": -122.4159858,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340342,
+    "title": "431407  Avalon Hayes Valley (shared)",
+    "latitude": 37.77508,
+    "longitude": -122.42448,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 102648,
+    "title": "Dolby Laboratories",
+    "latitude": 37.777522,
+    "longitude": -122.415426,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340357,
+    "title": "Dolby Laboratories",
+    "latitude": 37.777522,
+    "longitude": -122.415426,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 41373,
+    "title": "CCSF SFMTA",
+    "latitude": 37.778072,
+    "longitude": -122.422703,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 340365,
+    "title": "CCSF-SFMTA PAG 3",
+    "latitude": 37.778265,
+    "longitude": -122.422501,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 276288,
+    "title": "431407  Avalon Hayes Valley",
+    "latitude": 37.7749694,
+    "longitude": -122.4247376,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 2835,
+    "title": "San Francisco City Hall",
+    "latitude": 37.77913,
+    "longitude": -122.418,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340363,
+    "title": "Hotel Whitcomb - Tesla Destination",
+    "latitude": 37.77805,
+    "longitude": -122.41507,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140930,
+    "title": "DGS MAIN",
+    "latitude": 37.780078,
+    "longitude": -122.420544,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340375,
+    "title": "CCSF-SFMTA CIVIC CTR 3",
+    "latitude": 37.780116,
+    "longitude": -122.41741,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244543,
+    "title": "Whole Foods San Francisco -Trinity Place",
+    "latitude": 37.7782,
+    "longitude": -122.41375,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 340377,
+    "title": "CCSF-SFMTA CIVIC CTR 6",
+    "latitude": 37.780295,
+    "longitude": -122.417671,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 456368,
+    "title": "Ionna - SF SOMA",
+    "latitude": 37.77241815915393,
+    "longitude": -122.41278479045562,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 244546,
+    "title": "DGS Lot 88",
+    "latitude": 37.78066,
+    "longitude": -122.4211,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 311508,
+    "title": "Revel - Mission",
+    "latitude": 37.768919999997834,
+    "longitude": -122.4196599999998,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 340282,
+    "title": "Revel Mission District",
+    "latitude": 37.768917,
+    "longitude": -122.419749,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 291108,
+    "title": "Soma Grand",
+    "latitude": 37.77859773657566,
+    "longitude": -122.41259937333808,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 71732,
+    "title": "UC Hastings Larkin Garage",
+    "latitude": 37.7811644,
+    "longitude": -122.416844,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 340382,
+    "title": "UC Hastings Parking Garage",
+    "latitude": 37.781147,
+    "longitude": -122.41668,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 340367,
+    "title": "ACE Parking",
+    "latitude": 37.7783901,
+    "longitude": -122.412238,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140928,
+    "title": "ACE Parking",
+    "latitude": 37.7783901,
+    "longitude": -122.412238,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 163260,
+    "title": "San Francisco, Ca Supercharger",
+    "latitude": 37.781445,
+    "longitude": -122.421319,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 340385,
+    "title": "Opera Plaza - Tesla Supercharger",
+    "latitude": 37.781445,
+    "longitude": -122.421319,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 244547,
+    "title": "GSA CW BURTON ST. 2",
+    "latitude": 37.781583,
+    "longitude": -122.417563,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140934,
+    "title": "OPERA PLAZA",
+    "latitude": 37.7818291,
+    "longitude": -122.4214379,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 276286,
+    "title": "Costco San Francisco #144",
+    "latitude": 37.77055,
+    "longitude": -122.410891,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340386,
+    "title": "50 JONES EV 50 JONES EV 2",
+    "latitude": 37.781493,
+    "longitude": -122.411955,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340388,
+    "title": "50 JONES EV 50 JONES EV 1",
+    "latitude": 37.781541,
+    "longitude": -122.411966,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340268,
+    "title": "Whole Foods Market",
+    "latitude": 37.7681548,
+    "longitude": -122.4268005,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 71749,
+    "title": "Whole Foods - Market Street",
+    "latitude": 37.7683182,
+    "longitude": -122.4271088,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 282128,
+    "title": "Lyft Overnight Charging (Not Open to Public)",
+    "latitude": 37.76549,
+    "longitude": -122.41673,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 311976,
+    "title": "Filmore x Dobuce Ave",
+    "latitude": 37.7698985728731,
+    "longitude": -122.43010821172724,
+    "charger_levels": []
+  },
+  {
+    "id": 223319,
+    "title": "AMC Parking Lot Geary Blvd",
+    "latitude": 37.7850447,
+    "longitude": -122.4198061,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 223318,
+    "title": "521423_St Marys Cathedral",
+    "latitude": 37.784189,
+    "longitude": -122.424892,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340412,
+    "title": "IC SF B2 EVC 2",
+    "latitude": 37.783176,
+    "longitude": -122.409679,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 269309,
+    "title": "OUST VELO4",
+    "latitude": 37.764405,
+    "longitude": -122.413671,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 124159,
+    "title": "945 MARKET",
+    "latitude": 37.782834,
+    "longitude": -122.408838,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 340409,
+    "title": "IC SF B2 EVC 3",
+    "latitude": 37.783046,
+    "longitude": -122.408627,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 458324,
+    "title": "Potrero Center - Tesla Supercharger",
+    "latitude": 37.765808,
+    "longitude": -122.409857,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 276282,
+    "title": "San Francisco, CA - 16th Street",
+    "latitude": 37.766033,
+    "longitude": -122.408981,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 306031,
+    "title": "Potrero Center",
+    "latitude": 37.765786947096814,
+    "longitude": -122.40925498625472,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 294115,
+    "title": "MICHAEL STATION 1",
+    "latitude": 37.787641,
+    "longitude": -122.420268,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 124152,
+    "title": "ESSEX",
+    "latitude": 37.7799072,
+    "longitude": -122.4044935,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244553,
+    "title": "Safeway 0995 - San Francisco, CA",
+    "latitude": 37.78365,
+    "longitude": -122.4313,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 244555,
+    "title": "Parc 55 Hotel",
+    "latitude": 37.784871,
+    "longitude": -122.408991,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 79340,
+    "title": "Hotel Kabuki, A Joie de Vivre Hotel",
+    "latitude": 37.785523,
+    "longitude": -122.428919,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340437,
+    "title": "Hotel Kabuki, a Joie de Vivre Hotel - Tesla Destination",
+    "latitude": 37.785523,
+    "longitude": -122.428919,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 223301,
+    "title": "650 TOWNSEND BCP 6",
+    "latitude": 37.770218,
+    "longitude": -122.403873,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340426,
+    "title": "CCSF-SFMTA JAPAN CTR 2",
+    "latitude": 37.784992,
+    "longitude": -122.430086,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 41992,
+    "title": "CCSF-SFMTA",
+    "latitude": 37.7849121,
+    "longitude": -122.4302368,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 340443,
+    "title": "Hilton San Francisco Union Square - Tesla Destination",
+    "latitude": 37.786079,
+    "longitude": -122.410433,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 127581,
+    "title": "Hilton San Francisco Union Square",
+    "latitude": 37.786079,
+    "longitude": -122.4104325,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140938,
+    "title": "CCSF SFMTA",
+    "latitude": 37.782848,
+    "longitude": -122.405926,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 43251,
+    "title": "ESSEX",
+    "latitude": 37.7801955,
+    "longitude": -122.4039035,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140939,
+    "title": "CCSF SFMTA",
+    "latitude": 37.7829829,
+    "longitude": -122.4058287,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 276301,
+    "title": "431401  AVA Nob Hill",
+    "latitude": 37.788089,
+    "longitude": -122.4160023,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140937,
+    "title": "DUGONI",
+    "latitude": 37.782329,
+    "longitude": -122.4049949,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140936,
+    "title": "InterContinental Hotel - San Francisco",
+    "latitude": 37.782079,
+    "longitude": -122.404764,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 140948,
+    "title": "Nissan San Francisco",
+    "latitude": 37.788311,
+    "longitude": -122.422416,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 340472,
+    "title": "CCSF-SFMTA POLK BUSH 1",
+    "latitude": 37.788519,
+    "longitude": -122.41999,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340397,
+    "title": "InterContinental Hotel San Francisco",
+    "latitude": 37.7822079,
+    "longitude": -122.4048266,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 294113,
+    "title": "Harrison Street Flagship",
+    "latitude": 37.77856,
+    "longitude": -122.40272,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 27616,
+    "title": "CCSF SFMTA",
+    "latitude": 37.7886429,
+    "longitude": -122.4200287,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 124167,
+    "title": "SFMTA Polk/Bush Garage",
+    "latitude": 37.7886429,
+    "longitude": -122.4200287,
+    "charger_levels": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 340413,
+    "title": "CCSF-SFMTA MISSION ST 4",
+    "latitude": 37.783289,
+    "longitude": -122.405472,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244558,
+    "title": "Mason O' Farrell Garage",
+    "latitude": 37.786467,
+    "longitude": -122.409766,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 244549,
+    "title": "ACE PKG - 875 HOWARD GRG",
+    "latitude": 37.7819286,
+    "longitude": -122.4041764,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340216,
+    "title": "OAI 1",
+    "latitude": 37.762136,
+    "longitude": -122.410997,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 159224,
+    "title": "CCSF-SFMTA JCG ANNEX 1",
+    "latitude": 37.784902,
+    "longitude": -122.432567,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 82132,
+    "title": "Hotel Buchanan, A Kimpton Hotel",
+    "latitude": 37.78679,
+    "longitude": -122.430143,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 223303,
+    "title": "Adobe - SF Office - Phase 1",
+    "latitude": 37.770767,
+    "longitude": -122.401661,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 159225,
+    "title": "CCSF SFMTA ELLIS 1",
+    "latitude": 37.785976,
+    "longitude": -122.407309,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340215,
+    "title": "OAI 2",
+    "latitude": 37.761997,
+    "longitude": -122.410386,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 124147,
+    "title": "STRIPE",
+    "latitude": 37.7733744,
+    "longitude": -122.4007114,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 262659,
+    "title": "Rockwell Condos",
+    "latitude": 37.789486,
+    "longitude": -122.423562,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 41374,
+    "title": "Pacific Place Garage",
+    "latitude": 37.784911,
+    "longitude": -122.405334,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340323,
+    "title": "Google",
+    "latitude": 37.7735873,
+    "longitude": -122.4005342,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 27614,
+    "title": "BMW GROUP",
+    "latitude": 37.788312,
+    "longitude": -122.409919,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340274,
+    "title": "Design District 02",
+    "latitude": 37.768313,
+    "longitude": -122.401805,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340484,
+    "title": "La Galleria Residences",
+    "latitude": 37.7898633,
+    "longitude": -122.414772,
+    "charger_levels": [
+      2
+    ]
+  },
+  {
+    "id": 340270,
+    "title": "Design District",
+    "latitude": 37.768251,
+    "longitude": -122.401806,
+    "charger_levels": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 140952,
+    "title": "Whole Foods Market",
+    "latitude": 37.789923,
+    "longitude": -122.423811,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 340486,
+    "title": "Whole Foods Market",
+    "latitude": 37.789923,
+    "longitude": -122.423811,
+    "charger_levels": [
+      3
+    ]
+  },
+  {
+    "id": 109057,
+    "title": "The Westin St. Francis San Francisco on Union Square",
+    "latitude": 37.787828,
+    "longitude": -122.408731,
+    "charger_levels": [
+      2
+    ]
   }
 ]
