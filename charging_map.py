@@ -44,7 +44,7 @@ def render_station_map(station_data, charger_level_filter=None):
 
     for station in station_data:
         levels = station.get("charger_levels", [])
-        if charger_level_filter is not None and charger_level_filter not in levels:
+        if charger_level_filter and not any(level in levels for level in charger_level_filter):
             continue # Skip if station doesn't have selected level
 
         # Use the *fastest* available level (highest number) for color
@@ -53,12 +53,12 @@ def render_station_map(station_data, charger_level_filter=None):
             highest_level = max(levels)
             color = level_colors.get(highest_level, "gray")
 
-        popup_info = f"{station['title']}<br>Charger Levels: {', '.join(str(lvl) for lvl in levels)}"
-        
+        popup_info = f"<b>{station['title']}</b><br>Charger Levels: {', '.join(str(lvl) for lvl in levels)}"
+
         folium.Marker(
             location=[station["latitude"], station["longitude"]],
             popup=popup_info,
-            icon=folium.Icon(color="green", icon="bolt", prefix="fa")
+            icon=folium.Icon(color=color, icon="bolt", prefix="fa")
         ).add_to(marker_cluster)
           
     return m

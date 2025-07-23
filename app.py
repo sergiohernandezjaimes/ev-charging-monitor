@@ -27,24 +27,23 @@ all_levels = sorted(set(
 level_map = {1: "Level 1", 2: "Level 2", 3: "Level 3"}
 level_options = [level_map.get(lvl, f"Level {lvl}") for lvl in all_levels]
 
-selected_level_label = st.selectbox("Filter by Charger Level", ["ALL"] + level_options)
+selected_levels_label = st.multiselect("Filter by Charger Levels", level_options, default=level_options)
 
 # Reverse map label to number
-selected_level = None
+selected_levels = []
 for num, label in level_map.items():
-    if label == selected_level_label:
-        selected_level = num
-        break
+    if label in selected_levels_label:
+        selected_levels.append(num)
 
 # Render the map
-map_html = render_station_map(station_data, charger_level_filter=selected_level if selected_level_label != "ALL" else None)
+map_html = render_station_map(station_data, charger_level_filter=selected_levels)
 
 # ----------------------------
 # Visual Layout (Map)
 # ----------------------------
 st.title("EV Charging Session Monitor")
 st.subheader("Charging Station Map (San Francisco)")
-folium_static(render_station_map(station_data, charger_level_filter=selected_level if selected_level_label != "ALL" else None), width=800, height=600)
+folium_static(render_station_map(station_data, charger_level_filter=selected_levels), width=800, height=600)
 
 # ----------------------------
 # Load session data
