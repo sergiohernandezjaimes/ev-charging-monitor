@@ -35,12 +35,26 @@ def render_station_map(station_data, charger_level_filter=None):
     m = folium.Map(location=[37.7749, -122.4194], zoom_start=12)
     marker_cluster = MarkerCluster().add_to(m)
 
+    # Level ID to icon color mapping
+    level_colors = {
+        1: "blue",  # Level 1 = Slow
+        2: "green", # Level 2 = Standard
+        3: "red",   # Level 3 = Fast
+    }
+
     for station in station_data:
         levels = station.get("charger_levels", [])
         if charger_level_filter is not None and charger_level_filter not in levels:
             continue # Skip if station doesn't have selected level
 
-        popup_info = f"{station['title']}<br>Charger Levels: {levels}"
+        # Use the *fastest* available level (highest number) for color
+        color = "gray" # default fallback
+        if levels:
+            highest_level = max(levels)
+            color = level_colors.get(highest_level, "gray")
+
+        popup_info = f"{station['title']}<br>Charger Levels: {', '.join(str(lvl) for lvl in levels)}"
+        
         folium.Marker(
             location=[station["latitude"], station["longitude"]],
             popup=popup_info,
