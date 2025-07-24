@@ -47,6 +47,9 @@ def render_station_map(station_data, charger_level_filter=None):
         if charger_level_filter and not any(level in levels for level in charger_level_filter):
             continue # Skip if station doesn't have selected level
 
+        if not station.get("charger_levels"):
+            continue # Skip stations with no valid charger level
+
         # Use the *fastest* available level (highest number) for color
         color = "gray" # default fallback
         if levels:

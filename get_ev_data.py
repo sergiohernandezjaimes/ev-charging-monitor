@@ -50,6 +50,9 @@ def fetch_ev_stations_sf():
                 if is_in_san_francisco(lat,lon):
                     connections = station.get("Connections", [])
                     charger_levels = parse_charger_levels(connections)
+                
+                    if not charger_levels:
+                        continue
 
                     station_info = {
                         "id": station["ID"],
