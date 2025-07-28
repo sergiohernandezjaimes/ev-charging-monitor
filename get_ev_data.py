@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+import random
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,6 +19,9 @@ def parse_charger_levels(connections):
         if level_id:
             levels.add(level_id)
     return list(levels)
+
+# Simulated availability statuses
+AVAILABILITY_STATUSES = ["Available", "In use", "Offline"]
 
 # Fetch information from OpenCharge API within SF
 def fetch_ev_stations_sf():
@@ -47,21 +51,23 @@ def fetch_ev_stations_sf():
             try:
                 lat = station["AddressInfo"]["Latitude"]
                 lon = station["AddressInfo"]["Longitude"]
-                if is_in_san_francisco(lat,lon):
-                    connections = station.get("Connections", [])
-                    charger_levels = parse_charger_levels(connections)
-                
-                    if not charger_levels:
-                        continue
+                if not is_in_san_francisco(lat, lon):
+                    continue
 
-                    station_info = {
-                        "id": station["ID"],
-                        "title": station["AddressInfo"]["Title"],
-                        "latitude": lat,
-                        "longitude": lon,
-                        "charger_levels": charger_levels,
-                    }
-                    filtered_stations.append(station_info)
+                connections = station.get("Connections", [])
+                charger_levels = parse_charger_levels(connections)
+                if not charger_levels:
+                    continue
+
+                station_info = {
+                    "id": station["ID"],
+                    "title": station["AddressInfo"]["Title"],
+                    "latitude": lat,
+                    "longitude": lon,
+                    "charger_levels": charger_levels,
+                    "availability": random.choice(AVAILABILITY_STATUSES), 
+                }
+                filtered_stations.append(station_info)
             except (KeyError, TypeError):
                 continue
 

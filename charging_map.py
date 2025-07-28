@@ -35,33 +35,31 @@ def render_station_map(station_data, charger_level_filter=None):
     m = folium.Map(location=[37.7749, -122.4194], zoom_start=12)
     marker_cluster = MarkerCluster().add_to(m)
 
-    # Level ID to icon color mapping
-    level_colors = {
-        1: "blue",  # Level 1 = Slow
-        2: "green", # Level 2 = Standard
-        3: "red",   # Level 3 = Fast
+    # Icon color by availability status
+    availability_colors = {
+        "Available":"green",
+        "In use":"orange",
+        "Offline":"gray"
     }
 
     for station in station_data:
         levels = station.get("charger_levels", [])
         if charger_level_filter and not any(level in levels for level in charger_level_filter):
             continue # Skip if station doesn't have selected level
+        
+        availability = station.get("availability", "Unkown")
+        icon_color = availability_colors.get(availability, "blue") # fallback = blue
 
-        if not station.get("charger_levels"):
-            continue # Skip stations with no valid charger level
-
-        # Use the *fastest* available level (highest number) for color
-        color = "gray" # default fallback
-        if levels:
-            highest_level = max(levels)
-            color = level_colors.get(highest_level, "gray")
-
-        popup_info = f"<b>{station['title']}</b><br>Charger Levels: {', '.join(str(lvl) for lvl in levels)}"
+        popup_info = f"""
+        <b>{station['title']}</b><br>
+        Charger Levels: {', '.join(str(lvl) for lvl in levels)}<br>
+        Status: <b>{availability}</b>
+        """
 
         folium.Marker(
             location=[station["latitude"], station["longitude"]],
             popup=popup_info,
-            icon=folium.Icon(color=color, icon="bolt", prefix="fa")
+            icon=folium.Icon(color=icon_color, icon="bolt", prefix="fa")
         ).add_to(marker_cluster)
           
     return m

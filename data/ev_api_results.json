@@ -6,7 +6,8 @@
     "longitude": -122.418547,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340350,
@@ -15,7 +16,8 @@
     "longitude": -122.41808,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340348,
@@ -24,7 +26,8 @@
     "longitude": -122.41779,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 244540,
@@ -33,7 +36,8 @@
     "longitude": -122.41726,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340336,
@@ -42,7 +46,8 @@
     "longitude": -122.417204,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340334,
@@ -51,7 +56,8 @@
     "longitude": -122.417151,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 244538,
@@ -60,7 +66,8 @@
     "longitude": -122.417113,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 276290,
@@ -69,7 +76,8 @@
     "longitude": -122.4189577,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 140926,
@@ -78,7 +86,8 @@
     "longitude": -122.417239,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340351,
@@ -87,7 +96,8 @@
     "longitude": -122.417213,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 276291,
@@ -96,7 +106,8 @@
     "longitude": -122.4192281,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340340,
@@ -105,7 +116,8 @@
     "longitude": -122.41607,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 244541,
@@ -114,7 +126,8 @@
     "longitude": -122.416038,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340355,
@@ -124,7 +137,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340360,
@@ -133,7 +147,8 @@
     "longitude": -122.422554,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340314,
@@ -142,7 +157,8 @@
     "longitude": -122.4159858,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340342,
@@ -151,7 +167,8 @@
     "longitude": -122.42448,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 102648,
@@ -160,7 +177,8 @@
     "longitude": -122.415426,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340357,
@@ -169,7 +187,8 @@
     "longitude": -122.415426,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 41373,
@@ -179,7 +198,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340365,
@@ -188,7 +208,8 @@
     "longitude": -122.422501,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 276288,
@@ -197,7 +218,8 @@
     "longitude": -122.4247376,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 2835,
@@ -206,7 +228,8 @@
     "longitude": -122.418,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340363,
@@ -215,7 +238,8 @@
     "longitude": -122.41507,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 140930,
@@ -224,7 +248,8 @@
     "longitude": -122.420544,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340375,
@@ -233,7 +258,8 @@
     "longitude": -122.41741,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 244543,
@@ -242,7 +268,8 @@
     "longitude": -122.41375,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340377,
@@ -251,7 +278,8 @@
     "longitude": -122.417671,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 456368,
@@ -260,7 +288,8 @@
     "longitude": -122.41278479045562,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 244546,
@@ -269,7 +298,8 @@
     "longitude": -122.4211,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 311508,
@@ -278,7 +308,8 @@
     "longitude": -122.4196599999998,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340282,
@@ -287,7 +318,8 @@
     "longitude": -122.419749,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 291108,
@@ -296,7 +328,8 @@
     "longitude": -122.41259937333808,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 71732,
@@ -306,7 +339,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340382,
@@ -316,7 +350,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340367,
@@ -325,7 +360,8 @@
     "longitude": -122.412238,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 140928,
@@ -334,7 +370,8 @@
     "longitude": -122.412238,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 163260,
@@ -343,7 +380,8 @@
     "longitude": -122.421319,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340385,
@@ -352,7 +390,8 @@
     "longitude": -122.421319,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 244547,
@@ -361,7 +400,8 @@
     "longitude": -122.417563,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 140934,
@@ -370,7 +410,8 @@
     "longitude": -122.4214379,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 276286,
@@ -379,7 +420,8 @@
     "longitude": -122.410891,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340386,
@@ -388,7 +430,8 @@
     "longitude": -122.411955,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340388,
@@ -397,7 +440,8 @@
     "longitude": -122.411966,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340268,
@@ -407,7 +451,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 71749,
@@ -416,7 +461,8 @@
     "longitude": -122.4271088,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 282128,
@@ -425,7 +471,8 @@
     "longitude": -122.41673,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 223319,
@@ -434,7 +481,8 @@
     "longitude": -122.4198061,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 223318,
@@ -443,7 +491,8 @@
     "longitude": -122.424892,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340412,
@@ -452,7 +501,8 @@
     "longitude": -122.409679,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 269309,
@@ -461,7 +511,8 @@
     "longitude": -122.413671,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 124159,
@@ -471,7 +522,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340409,
@@ -480,7 +532,8 @@
     "longitude": -122.408627,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 458324,
@@ -489,7 +542,8 @@
     "longitude": -122.409857,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 276282,
@@ -498,7 +552,8 @@
     "longitude": -122.408981,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 306031,
@@ -507,7 +562,8 @@
     "longitude": -122.40925498625472,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 294115,
@@ -516,7 +572,8 @@
     "longitude": -122.420268,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 124152,
@@ -525,7 +582,8 @@
     "longitude": -122.4044935,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 244553,
@@ -535,7 +593,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 244555,
@@ -544,7 +603,8 @@
     "longitude": -122.408991,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 79340,
@@ -553,7 +613,8 @@
     "longitude": -122.428919,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340437,
@@ -562,7 +623,8 @@
     "longitude": -122.428919,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 223301,
@@ -571,7 +633,8 @@
     "longitude": -122.403873,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340426,
@@ -580,7 +643,8 @@
     "longitude": -122.430086,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 41992,
@@ -590,7 +654,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340443,
@@ -599,7 +664,8 @@
     "longitude": -122.410433,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 127581,
@@ -608,7 +674,8 @@
     "longitude": -122.4104325,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 140938,
@@ -618,7 +685,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 43251,
@@ -627,7 +695,8 @@
     "longitude": -122.4039035,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 140939,
@@ -637,7 +706,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 276301,
@@ -646,7 +716,8 @@
     "longitude": -122.4160023,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 140937,
@@ -655,7 +726,8 @@
     "longitude": -122.4049949,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 140936,
@@ -664,7 +736,8 @@
     "longitude": -122.404764,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 140948,
@@ -673,7 +746,8 @@
     "longitude": -122.422416,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340472,
@@ -682,7 +756,8 @@
     "longitude": -122.41999,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340397,
@@ -691,7 +766,8 @@
     "longitude": -122.4048266,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 294113,
@@ -700,7 +776,8 @@
     "longitude": -122.40272,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 27616,
@@ -710,7 +787,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 124167,
@@ -720,7 +798,8 @@
     "charger_levels": [
       1,
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340413,
@@ -729,7 +808,8 @@
     "longitude": -122.405472,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 244558,
@@ -738,7 +818,8 @@
     "longitude": -122.409766,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 244549,
@@ -747,7 +828,8 @@
     "longitude": -122.4041764,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340216,
@@ -756,7 +838,8 @@
     "longitude": -122.410997,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 159224,
@@ -765,7 +848,8 @@
     "longitude": -122.432567,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 82132,
@@ -774,7 +858,8 @@
     "longitude": -122.430143,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 223303,
@@ -783,7 +868,8 @@
     "longitude": -122.401661,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 159225,
@@ -792,7 +878,8 @@
     "longitude": -122.407309,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Offline"
   },
   {
     "id": 340215,
@@ -801,7 +888,8 @@
     "longitude": -122.410386,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 124147,
@@ -810,7 +898,8 @@
     "longitude": -122.4007114,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 262659,
@@ -819,7 +908,8 @@
     "longitude": -122.423562,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 41374,
@@ -828,7 +918,8 @@
     "longitude": -122.405334,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340323,
@@ -837,7 +928,8 @@
     "longitude": -122.4005342,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 27614,
@@ -846,7 +938,8 @@
     "longitude": -122.409919,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340274,
@@ -855,7 +948,8 @@
     "longitude": -122.401805,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340484,
@@ -864,7 +958,8 @@
     "longitude": -122.414772,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 340270,
@@ -874,7 +969,8 @@
     "charger_levels": [
       2,
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 140952,
@@ -883,7 +979,8 @@
     "longitude": -122.423811,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "In use"
   },
   {
     "id": 340486,
@@ -892,7 +989,8 @@
     "longitude": -122.423811,
     "charger_levels": [
       3
-    ]
+    ],
+    "availability": "Available"
   },
   {
     "id": 109057,
@@ -901,6 +999,7 @@
     "longitude": -122.408731,
     "charger_levels": [
       2
-    ]
+    ],
+    "availability": "Available"
   }
 ]
