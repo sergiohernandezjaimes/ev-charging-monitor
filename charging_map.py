@@ -47,7 +47,7 @@ def render_station_map(station_data, charger_level_filter=None):
         if charger_level_filter and not any(level in levels for level in charger_level_filter):
             continue # Skip if station doesn't have selected level
         
-        availability = station.get("availability", "Unkown")
+        availability = station.get("availability", "Unknown")
         icon_color = availability_colors.get(availability, "blue") # fallback = blue
 
         popup_info = f"""
