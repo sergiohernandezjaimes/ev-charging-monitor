@@ -12,25 +12,15 @@ from streamlit_folium import folium_static
 def load_real_stations(json_path="data/ev_api_results.json"):
     if os.path.exists(json_path):
         with open(json_path, "r") as f:
-            data = json.load(f)
-
-        stations = []
-        for item in data:
-            if item.get("AddressInfo") and item["AddressInfo"].get("Latitude") and item["AddressInfo"].get("Longitude"):
-                stations.append({
-                    "id": item.get("ID"),
-                    "name": item["AddressInfo"].get("Title", "Unnamed Station"),
-                    "lat": item["AddressInfo"]["Latitude"],
-                    "lon": item["AddressInfo"]["Longitude"],
-                    "address": item["AddressInfo"].get("AddressLine1", "No Address")
-                })
-        return stations
+            return json.load(f)
     else:
         return []
+    
 # Simulated user location (e.g. user's home)
 user_location = (37.7680, -122.4313) # Near Mission Dolores Park
 
 def render_station_map(station_data, charger_level_filter=None):
+    station_data = sorted(station_data, key=lambda s: s.get("distance_miles", float("inf")))
     # Base map centered on SF
     m = folium.Map(location=[37.7749, -122.4194], zoom_start=12)
     marker_cluster = MarkerCluster().add_to(m)
@@ -53,7 +43,8 @@ def render_station_map(station_data, charger_level_filter=None):
         popup_info = f"""
         <b>{station['title']}</b><br>
         Charger Levels: {', '.join(str(lvl) for lvl in levels)}<br>
-        Status: <b>{availability}</b>
+        Status: <b>{availability}</b><br>
+        Distance: <b>{station['distance_miles']} mi</b>
         """
 
         folium.Marker(

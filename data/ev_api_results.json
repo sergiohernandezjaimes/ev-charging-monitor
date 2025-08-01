@@ -7,7 +7,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.82
   },
   {
     "id": 340350,
@@ -17,7 +18,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.89
   },
   {
     "id": 340348,
@@ -27,7 +29,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 0.9
   },
   {
     "id": 244540,
@@ -37,7 +40,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.91
   },
   {
     "id": 340336,
@@ -47,7 +51,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.91
   },
   {
     "id": 340334,
@@ -57,7 +62,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 0.91
   },
   {
     "id": 244538,
@@ -67,7 +73,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.91
   },
   {
     "id": 276290,
@@ -77,7 +84,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.91
   },
   {
     "id": 140926,
@@ -87,7 +95,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.94
   },
   {
     "id": 340351,
@@ -97,7 +106,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.94
   },
   {
     "id": 276291,
@@ -107,7 +117,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 0.92
   },
   {
     "id": 340340,
@@ -117,7 +128,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.96
   },
   {
     "id": 244541,
@@ -127,7 +139,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.96
   },
   {
     "id": 340355,
@@ -138,7 +151,8 @@
       2,
       3
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.03
   },
   {
     "id": 340360,
@@ -148,7 +162,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 0.83
   },
   {
     "id": 340314,
@@ -158,7 +173,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.88
   },
   {
     "id": 340342,
@@ -168,7 +184,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.61
   },
   {
     "id": 102648,
@@ -178,7 +195,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.09
   },
   {
     "id": 340357,
@@ -188,7 +206,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.09
   },
   {
     "id": 41373,
@@ -199,7 +218,8 @@
       1,
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 0.84
   },
   {
     "id": 340365,
@@ -209,7 +229,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.86
   },
   {
     "id": 276288,
@@ -219,7 +240,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.6
   },
   {
     "id": 2835,
@@ -229,7 +251,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.06
   },
   {
     "id": 340363,
@@ -239,7 +262,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.13
   },
   {
     "id": 140930,
@@ -249,7 +273,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.02
   },
   {
     "id": 340375,
@@ -259,7 +284,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.13
   },
   {
     "id": 244543,
@@ -269,7 +295,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.19
   },
   {
     "id": 340377,
@@ -279,7 +306,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.13
   },
   {
     "id": 456368,
@@ -289,7 +317,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.06
   },
   {
     "id": 244546,
@@ -299,7 +328,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.04
   },
   {
     "id": 311508,
@@ -309,7 +339,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.64
   },
   {
     "id": 340282,
@@ -319,7 +350,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 0.64
   },
   {
     "id": 291108,
@@ -329,7 +361,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.26
   },
   {
     "id": 71732,
@@ -340,7 +373,8 @@
       2,
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.2
   },
   {
     "id": 340382,
@@ -351,7 +385,8 @@
       2,
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.21
   },
   {
     "id": 340367,
@@ -361,7 +396,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.27
   },
   {
     "id": 140928,
@@ -371,7 +407,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.27
   },
   {
     "id": 163260,
@@ -381,7 +418,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.08
   },
   {
     "id": 340385,
@@ -391,7 +429,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.08
   },
   {
     "id": 244547,
@@ -401,7 +440,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.2
   },
   {
     "id": 140934,
@@ -411,7 +451,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.1
   },
   {
     "id": 276286,
@@ -421,7 +462,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.13
   },
   {
     "id": 340386,
@@ -431,7 +473,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.41
   },
   {
     "id": 340388,
@@ -441,7 +484,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.41
   },
   {
     "id": 340268,
@@ -452,7 +496,8 @@
       2,
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 0.25
   },
   {
     "id": 71749,
@@ -462,7 +507,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 0.23
   },
   {
     "id": 282128,
@@ -472,7 +518,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 0.82
   },
   {
     "id": 223319,
@@ -482,7 +529,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.33
   },
   {
     "id": 223318,
@@ -492,7 +540,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.17
   },
   {
     "id": 340412,
@@ -502,7 +551,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.58
   },
   {
     "id": 269309,
@@ -512,7 +562,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.0
   },
   {
     "id": 124159,
@@ -523,7 +574,8 @@
       2,
       3
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.6
   },
   {
     "id": 340409,
@@ -533,7 +585,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.62
   },
   {
     "id": 458324,
@@ -543,7 +596,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.18
   },
   {
     "id": 276282,
@@ -553,7 +607,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.23
   },
   {
     "id": 306031,
@@ -563,7 +618,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 1.22
   },
   {
     "id": 294115,
@@ -573,7 +629,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.48
   },
   {
     "id": 124152,
@@ -583,7 +640,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.68
   },
   {
     "id": 244553,
@@ -594,7 +652,8 @@
       2,
       3
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 1.08
   },
   {
     "id": 244555,
@@ -604,7 +663,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.69
   },
   {
     "id": 79340,
@@ -614,7 +674,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 1.22
   },
   {
     "id": 340437,
@@ -624,7 +685,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.22
   },
   {
     "id": 223301,
@@ -634,7 +696,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.51
   },
   {
     "id": 340426,
@@ -644,7 +707,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.17
   },
   {
     "id": 41992,
@@ -655,7 +719,8 @@
       1,
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.17
   },
   {
     "id": 340443,
@@ -665,7 +730,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.69
   },
   {
     "id": 127581,
@@ -675,7 +741,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.69
   },
   {
     "id": 140938,
@@ -686,7 +753,8 @@
       1,
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.73
   },
   {
     "id": 43251,
@@ -696,7 +764,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.72
   },
   {
     "id": 140939,
@@ -707,7 +776,8 @@
       1,
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.74
   },
   {
     "id": 276301,
@@ -717,7 +787,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.62
   },
   {
     "id": 140937,
@@ -727,7 +798,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.75
   },
   {
     "id": 140936,
@@ -737,7 +809,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.75
   },
   {
     "id": 140948,
@@ -747,7 +820,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.48
   },
   {
     "id": 340472,
@@ -757,7 +831,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.54
   },
   {
     "id": 340397,
@@ -767,7 +842,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.75
   },
   {
     "id": 294113,
@@ -777,7 +853,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.73
   },
   {
     "id": 27616,
@@ -788,7 +865,8 @@
       1,
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.55
   },
   {
     "id": 124167,
@@ -799,7 +877,8 @@
       1,
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.55
   },
   {
     "id": 340413,
@@ -809,7 +888,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.76
   },
   {
     "id": 244558,
@@ -819,7 +899,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 1.74
   },
   {
     "id": 244549,
@@ -829,7 +910,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.77
   },
   {
     "id": 340216,
@@ -839,7 +921,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Offline",
+    "distance_miles": 1.18
   },
   {
     "id": 159224,
@@ -849,7 +932,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "In use",
+    "distance_miles": 1.17
   },
   {
     "id": 82132,
@@ -859,7 +943,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.3
   },
   {
     "id": 223303,
@@ -869,7 +954,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.63
   },
   {
     "id": 159225,
@@ -879,7 +965,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Offline"
+    "availability": "Available",
+    "distance_miles": 1.81
   },
   {
     "id": 340215,
@@ -889,7 +976,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.22
   },
   {
     "id": 124147,
@@ -899,7 +987,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Available",
+    "distance_miles": 1.72
   },
   {
     "id": 262659,
@@ -909,7 +998,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "Offline",
+    "distance_miles": 1.54
   },
   {
     "id": 41374,
@@ -919,7 +1009,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.84
   },
   {
     "id": 340323,
@@ -929,7 +1020,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.73
   },
   {
     "id": 27614,
@@ -939,7 +1031,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.83
   },
   {
     "id": 340274,
@@ -949,7 +1042,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.61
   },
   {
     "id": 340484,
@@ -959,7 +1053,8 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "In use",
+    "distance_miles": 1.76
   },
   {
     "id": 340270,
@@ -970,7 +1065,8 @@
       2,
       3
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.61
   },
   {
     "id": 140952,
@@ -980,7 +1076,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "In use"
+    "availability": "In use",
+    "distance_miles": 1.57
   },
   {
     "id": 340486,
@@ -990,7 +1087,8 @@
     "charger_levels": [
       3
     ],
-    "availability": "Available"
+    "availability": "Available",
+    "distance_miles": 1.57
   },
   {
     "id": 109057,
@@ -1000,6 +1098,7 @@
     "charger_levels": [
       2
     ],
-    "availability": "Available"
+    "availability": "Offline",
+    "distance_miles": 1.84
   }
 ]

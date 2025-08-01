@@ -3,9 +3,13 @@ import requests
 import json
 import random
 from dotenv import load_dotenv
+from geopy.distance import geodesic
 
 load_dotenv()
 api_key = os.getenv("OPENCHARGEMAP_API_KEY")
+
+# Simulated user location (example: near Mission Dolores Park)
+user_location = (37.7680, -122.4313)
 
 def is_in_san_francisco(lat, lon):
     # Round bounding box around SF
@@ -51,23 +55,24 @@ def fetch_ev_stations_sf():
             try:
                 lat = station["AddressInfo"]["Latitude"]
                 lon = station["AddressInfo"]["Longitude"]
-                if not is_in_san_francisco(lat, lon):
-                    continue
+                if is_in_san_francisco(lat, lon):
+                    connections = station.get("Connections", [])
+                    charger_levels = parse_charger_levels(connections)
+                    if not charger_levels:
+                        continue
 
-                connections = station.get("Connections", [])
-                charger_levels = parse_charger_levels(connections)
-                if not charger_levels:
-                    continue
+                    distance = geodesic(user_location, (lat,lon)).miles
 
-                station_info = {
-                    "id": station["ID"],
-                    "title": station["AddressInfo"]["Title"],
-                    "latitude": lat,
-                    "longitude": lon,
-                    "charger_levels": charger_levels,
-                    "availability": random.choice(AVAILABILITY_STATUSES), 
-                }
-                filtered_stations.append(station_info)
+                    station_info = {
+                        "id": station["ID"],
+                        "title": station["AddressInfo"]["Title"],
+                        "latitude": lat,
+                        "longitude": lon,
+                        "charger_levels": charger_levels,
+                        "availability": random.choice(AVAILABILITY_STATUSES),
+                        "distance_miles": round(distance, 2),
+                    }
+                    filtered_stations.append(station_info)
             except (KeyError, TypeError):
                 continue
 
