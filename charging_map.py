@@ -19,8 +19,21 @@ def load_real_stations(json_path="data/ev_api_results.json"):
 # Simulated user location (e.g. user's home)
 user_location = (37.7680, -122.4313) # Near Mission Dolores Park
 
-def render_station_map(station_data, charger_level_filter=None):
-    station_data = sorted(station_data, key=lambda s: s.get("distance_miles", float("inf")))
+def render_station_map(station_data, charger_level_filter=None, sort_by="Distance"):
+    # Sort stations by selected method
+    if sort_by == "Distance":
+        station_data = sorted(station_data, key=lambda s: s.get("distance_miles", float("inf")))
+    elif sort_by == "Availability":
+        # Prioritize Available > In use > Offline > Unknown
+        priority = {"Available": 0, "In use": 1, "Offline": 2}
+        station_data = sorted(station_data, key=lambda s: priority.get(s.get("availability", ""), 3))
+    elif sort_by == "Charger Level":
+        # Sort by highest charger level available (Level 3 > 2 > 1)
+        def highest_level(station):
+            levels = station.get("charger_levels", [])
+            return -max(levels) if levels else float("inf")
+        station_data = sorted(station_data, key=highest_level)
+
     # Base map centered on SF
     m = folium.Map(location=[37.7749, -122.4194], zoom_start=12)
     marker_cluster = MarkerCluster().add_to(m)
@@ -32,7 +45,7 @@ def render_station_map(station_data, charger_level_filter=None):
         "Offline":"gray"
     }
 
-    for station in station_data:
+    for i, station in enumerate(station_data, start=1):
         levels = station.get("charger_levels", [])
         if charger_level_filter and not any(level in levels for level in charger_level_filter):
             continue # Skip if station doesn't have selected level
@@ -41,7 +54,7 @@ def render_station_map(station_data, charger_level_filter=None):
         icon_color = availability_colors.get(availability, "blue") # fallback = blue
 
         popup_info = f"""
-        <b>{station['title']}</b><br>
+        <b>#{i} {station['title']}</b><br>
         Charger Levels: {', '.join(str(lvl) for lvl in levels)}<br>
         Status: <b>{availability}</b><br>
         Distance: <b>{station['distance_miles']} mi</b>
@@ -52,12 +65,12 @@ def render_station_map(station_data, charger_level_filter=None):
             popup=popup_info,
             icon=folium.Icon(color=icon_color, icon="bolt", prefix="fa")
         ).add_to(marker_cluster)
-          
+
     return m
 
 # For standalone testing
 if __name__ == "__main__":
-    stations = load_real_stations() # Load from JSON
-    m = render_station_map(stations) # pass loaded data
-    m.save("sf_charging_map.html")
-    print("Map saved as sf_charging_map.html")
+   stations = load_real_stations() # Load from JSON
+   m = render_station_map(stations) # pass loaded data
+   m.save("sf_charging_map.html")
+   print("Map saved as sf_charging_map.html")

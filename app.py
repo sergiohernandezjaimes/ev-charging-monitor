@@ -21,7 +21,7 @@ with open("data/ev_api_results.json") as f:
 all_levels = sorted(set(
     level for station in station_data
     for level in station.get("charger_levels", [])
-))
+))   
 
 # Map numeric levels to names
 level_map = {1: "Level 1", 2: "Level 2", 3: "Level 3"}
@@ -29,21 +29,25 @@ level_options = [level_map.get(lvl, f"Level {lvl}") for lvl in all_levels]
 
 selected_levels_label = st.multiselect("Filter by Charger Levels", level_options, default=level_options)
 
+# Sort options for smart filtering
+sort_option = st.sidebar.selectbox(
+    "Sort stations by:",
+    ("Distance", "Availability", "Charger Level")
+)
+
 # Reverse map label to number
 selected_levels = []
 for num, label in level_map.items():
     if label in selected_levels_label:
         selected_levels.append(num)
 
-# Render the map
-map_html = render_station_map(station_data, charger_level_filter=selected_levels)
-
 # ----------------------------
 # Visual Layout (Map)
 # ----------------------------
 st.title("EV Charging Session Monitor")
 st.subheader("Charging Station Map (San Francisco)")
-folium_static(render_station_map(station_data, charger_level_filter=selected_levels), width=800, height=600)
+map_ = render_station_map(station_data, charger_level_filter=selected_levels, sort_by=sort_option)
+folium_static(map_, width=900, height=700)
 
 # ----------------------------
 # Load session data
@@ -88,6 +92,8 @@ with st.sidebar:
             max_value=max_date,
             key="date_range"
         )
+
+    
 
 # ----------------------------
 # Date Filter
