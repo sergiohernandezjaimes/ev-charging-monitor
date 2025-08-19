@@ -16,6 +16,16 @@ A growing list of ideas for improving functionality, interactivity, and user exp
 
 ---
 
+### Interactive Map Selection
+**Idea**: Upgrade Folium map to support interactive station selection.  
+- Allow users to click a map marker and instantly filter session data + charts.  
+- Replace or complement sidebar station selector.  
+- Explore [`streamlit-folium`](https://github.com/randyzwitch/streamlit-folium) for capturing map clicks.  
+
+**Status**: Future enhancement (polish). 
+
+---
+
 ### ⚡ Charging Station Integration
 
 - [x] Display **availability status** (Available / In use/ Unknown)
@@ -74,6 +84,10 @@ A growing list of ideas for improving functionality, interactivity, and user exp
 - [ ] Battery % integration for planning
 - [ ] Compare charging behavior across cities
 - [ ] Integration with car telematics or OBD-II data
+- [ ] Allow users to save their favorite filter combinations (e.g. Level 3 chargers near home).
+- [ ] Give each bookmark a name and icon (e.g. 🚗 "Work Morning", ⚡ "Quick Charge", 🌅 "Evening Run").
+- [ ] Display saved filters in a dropdown to easily switch between them.
+- [ ] Save to local storage or allow user login to persist across devices.
 
 
 ---
