@@ -7,8 +7,11 @@ A real-time dashboard that simulates EV charging sessions across San Francisco. 
 ---
 ## 🚗 Features
 
-
-- ✅ Simulates live EV charging sessions across 3 SF stations
+- 🔌 Integrated **OpenChargeMap API** for live station data  
+- 🔋 **Filter by charger level** (Level 1, 2, 3)
+- ✅ **Simulates availability status** (Available / In Use / Offline)
+- 📈 Hybrid approach to **session log filtering** (always shows data, even if IDs don't match)
+- 🤗 Live **deployment on Hugging Face Spaces**
 - 🗺️ Interactive map using Folium
 - 📍 GPS-based distance from user to station
 - 🧮 Session-level analytics: energy (kWh), duration, cost
@@ -19,8 +22,10 @@ A real-time dashboard that simulates EV charging sessions across San Francisco. 
 
 ---
 
-## 📸 Demo
+##  Live Demo
+👉 [Try it on Hugging Face](https://huggingface.co/spaces/sergiohernandezjaimes/ev-charging-monitor)
 
+## 📸 Screenshots
 ![EV Dashboard Preview](assets/demo.gif)
 *(Streamlit dashboard with map + live session stats)*
 
@@ -37,20 +42,21 @@ A real-time dashboard that simulates EV charging sessions across San Francisco. 
 
 ---
 
-## 🛣️ Feature Roadmap
-
-| Feature                        | Status   |
-|-------------------------------|----------|
-| Charging session simulation   | ✅ Done   |
-| Station filtering + map view | ✅ Done   |
-| Distance calculator           | ✅ Done   |
-| Date range + CSV export       | ✅ Done   |
-| 🔜 Route planner UI           | In progress |
-| 🔜 Dynamic pricing (time of day) | Planned |
-| 🔜 Mobile-friendly layout     | Planned |
-| 🔜 Admin upload access        | Planned  |
+## 🛣️ Roadmap
+- [ ] **Distance Estimation** (Step 4) – show nearest stations to user  
+- [ ] Interactive map selection  
+- [ ] Smarter availability simulation with real-time data  
+- [ ] Personalized AI-powered recommendations
 
 ---
+
+## 🧑‍💻 Getting Started
+```bash
+git clone <https://github.com/sergiohernandezjaimes/ev-charging-monitor>
+cd ev-charging-monitor
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ## 🌁 About Me
 
