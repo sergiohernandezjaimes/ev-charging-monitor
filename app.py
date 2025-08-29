@@ -4,14 +4,20 @@
 import streamlit as st
 st.set_page_config(page_title="EV Charging Monitor", layout="wide")
 
-from charging_map import render_station_map
+from geopy.distance import geodesic
+from charging_map import render_station_map, user_location, load_real_stations
 from streamlit_folium import folium_static
+from geopy.geocoders import Nominatim
+from typing import cast
+from geopy.location import Location
 import pandas as pd
 import os
 import json
 import streamlit.components.v1 as components
 
 st.title("EV Charging Monitor - San Francisco")
+
+
 
 # ----------------------------
 # Load station data
@@ -26,6 +32,8 @@ all_levels = sorted(set(
 ))
 level_map = {1: "Level 1", 2: "Level 2", 3: "Level 3"}
 level_options = [level_map.get(lvl, f"Level {lvl}") for lvl in all_levels]
+
+
 
 # ----------------------------
 # Load session data
@@ -54,7 +62,10 @@ if "search_query" not in st.session_state:
 if "selected_levels_label" not in st.session_state:
     st.session_state.selected_levels_label = level_options[:]
 if "date_range" not in st.session_state:
-    st.session_state.date_range = (min_date, max_date) if min_date and max_date else None
+    if min_date and max_date:
+        st.session_state.date_range = (min_date, max_date) 
+    else:
+         st.session_state.date_range = (None, None)
 if "selected_station" not in st.session_state:
     st.session_state.selected_station = "ALL"
 if "sort_option" not in st.session_state:
@@ -71,9 +82,10 @@ def reset_filters():
 
 with st.sidebar:
     st.header("Filter Options")
+    st.sidebar.subheader("Charging Stations")
 
     # Sort option
-    sort_option = st.selectbox(
+    sort_option = st.sidebar.radio(
         "Sort stations by:",
         ("Distance", "Availability", "Charger Level"),
         key="sort_option",
@@ -98,10 +110,39 @@ with st.sidebar:
             key="date_range",
         )
 
+    # Default location (Mission Dolores Park)
+    default_location = "Mission Dolores Park, San Francisco"
+    geolocator = Nominatim(user_agent="ev-charging-monitor")
+
+    user_location = st.sidebar.text_input(
+        "Enter your location (address or landmark):", default_location
+    )
+
+    try:
+        location = cast(Location, geolocator.geocode(user_location))
+        if location:
+            user_coords = (float(location.latitude), float(location.longitude))
+        else:
+            st.sidebar.warning("Could not find that location. Using default.")
+            location = cast(Location, geolocator.geocode(default_location))
+            user_coords = (float(location.latitude), float(location.longitude))
+    except Exception as e:
+        st.sidebar.error(f"Location lookup failed: {e}")
+        location = cast(Location, geolocator.geocode(default_location))
+        user_coords = (float(location.latitude), float(location.longitude))    
+
     st.markdown("---")
 
     # Reset button: use callback to clear keys (avoid modifying widget after instantiation)
     st.button("Reset Filters", on_click=reset_filters)
+
+    for station in sorted(station_data, key=lambda x: x.get("distance_miles", float("inf"))):
+        name = station.get("station_name", "Unknown Station")
+        distance = station.get("distance_miles", float("inf"))
+        if distance != float("inf"):
+            st.sidebar.write(f"{name} - {distance:.2f} mi")
+        else:
+            st.sidebar.write(name)
     
 # ----------------------------
 # Apply Date Filter (only when both dates selected and valid)
@@ -109,12 +150,9 @@ with st.sidebar:
 if st.session_state.date_range and isinstance(st.session_state.date_range, tuple) and len(st.session_state.date_range) == 2:
     start_date, end_date = st.session_state.date_range
     if start_date and end_date:
-        if start_date > end_date:
-            st.warning("Start date is after end date. Please adjust.")
-    else:
-        data = data[
-            (data["start_time"].dt.date >= start_date)
-            & (data["start_time"].dt.date <= end_date)
+        filtered_data = data[
+            (data["start_time"].dt.date >= start_date) &
+            (data["start_time"].dt.date <= end_date)
         ]
 else:
     st.info("Please select both a start date and end date.")
@@ -138,6 +176,19 @@ if search_query:
     ]
 if not filtered_station_data:
     st.warning(f"No stations found matching '{search_query}'.")
+
+# ----------------------------
+# Compute distance in miles for popups & sorting
+# ----------------------------
+for station in filtered_station_data:
+    coords = (station.get("latitude"), station.get("longitude"))
+    if coords[0] is not None and coords[1] is not None:
+        try:
+            station["distance_miles"] = round(geodesic(user_coords, coords).miles, 2)
+        except Exception:
+            station["distance_miles"] = float("inf")
+    else:
+        station["distance_miles"] = float("inf")         
     
 # ----------------------------
 # Visual Layout (Map)
@@ -162,23 +213,39 @@ if search_query:
 # ----------------------------
 # Charging Session Log Table
 # ----------------------------
+if "date_range" in st.session_state and len(st.session_state.date_range) == 2:
+    start_date, end_date = st.session_state.date_range
+else:
+    start_date, end_date = None, None
+
 # Get station ID from filtered_station_data
 filtered_station_ids = {station.get("station_id") for station in filtered_station_data}
+filtered_data = data[data["station_id"].isin(filtered_station_ids)]
 
-# Hybrid approach: if no matching IDs, show all sessions with a warning
-if data["station_id"].isin(filtered_station_ids).sum() == 0:
-    st.warning("No matching stations IDs between CSV and JSON - showing all sessions.")
-    filtered_data = data
-else:    
-    filtered_data = data[data["station_id"].isin(filtered_station_ids)]
-
-# If a single station is selected, filter further
-if st.session_state.get("selected_station", "ALL") != "ALL":
-    filtered_data = filtered_data[filtered_data["station_id"] == st.session_state.selected_station]
-
-if not filtered_data.empty:
+# Apply date range filters only if both dates selected
+if filtered_data.empty:
+    st.warning("No matching sessions for the selected stations/filters. Please try adjusting your filters (date, availability, charger level).")
+else:
+    # Apply same sort as the map
+    sort_choice = st.session_state.get("sort_option", "Distance")
+    if sort_choice == "Distance":
+        station_distance_map = {
+            s["station_id"]: s.get("distance_miles", float("inf"))
+            for s in filtered_station_data
+        }
+        filtered_data["distance_miles"] = filtered_data["station_id"].map(station_distance_map)
+        filtered_data = filtered_data.sort_values("distance_miles")
+    elif sort_choice == "Availability":
+        # Sort by status if available in CSV
+        if "availability" in filtered_data.columns:
+            filtered_data = filtered_data.sort_values("availability")
+    elif sort_choice == "Charger Level":
+        if "charger_level" in filtered_data.columns:
+            filtered_data = filtered_data.sort_values("charger_level")
+    
+    # Display session log
     st.subheader("Charging Session Log")
-    st.dataframe(filtered_data)
+    st.dataframe(filtered_data.drop(columns=["distance_miles"], errors="ignore"))
 
     # Download filtered data
     csv = filtered_data.to_csv(index=False).encode("utf-8")
@@ -205,9 +272,6 @@ if not filtered_data.empty:
 
     st.subheader("Cost per Session (USD)")
     st.bar_chart(filtered_data.set_index("session_id")["cost_usd"])
-    
-else:
-    st.info("No data to display.")
 
 # ----------------------------
 # Coming Soon: Route Planner

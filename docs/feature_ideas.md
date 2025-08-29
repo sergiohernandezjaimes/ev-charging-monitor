@@ -6,6 +6,7 @@ A growing list of ideas for improving functionality, interactivity, and user exp
 
 ### 🌍 Map + Navigation
 
+- [x] Allow user to input their own location (address or landmark) to calculate distance to each station.
 - [ ] Show real-time **distance to station** using user's current GPS
 - [ ] Estimate **drive time** with traffic via Google Maps API
 - [ ] Sort/Filter stations by proximity
