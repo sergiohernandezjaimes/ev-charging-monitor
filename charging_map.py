@@ -15,9 +15,6 @@ def load_real_stations(json_path="data/ev_api_results.json"):
             return json.load(f)
     else:
         return []
-    
-# Simulated user location (e.g. user's home)
-user_location = (37.7680, -122.4313) # Near Mission Dolores Park
 
 def render_station_map(station_data, charger_level_filter=None, sort_by="Distance"):
     # Sort stations by selected method
@@ -57,7 +54,7 @@ def render_station_map(station_data, charger_level_filter=None, sort_by="Distanc
         <b>#{i} {station['title']}</b><br>
         Charger Levels: {', '.join(str(lvl) for lvl in levels)}<br>
         Status: <b>{availability}</b><br>
-        Distance: <b>{station['distance_miles']} mi</b>
+        Distance: <b>{station.get('distance_miles', 'N/A')} mi</b>
         """
 
         folium.Marker(
